@@ -1,0 +1,31 @@
+/* ---------------------------------- */
+/* ==header                           */
+/* ---------------------------------- */
+
+#header {
+	a {
+		text-decoration: none;
+	}
+}
+
+.actus {
+	width: 100%;
+	height: 10px;
+	background: $gray;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	.actu {
+		position: absolute;
+		left: 70%;
+
+		width: 200px;
+		height: 200px;
+
+		@include border-bottom-radius(50px);
+
+		background: #EEECEA;
+	}
+}
