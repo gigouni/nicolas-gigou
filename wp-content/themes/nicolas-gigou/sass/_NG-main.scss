@@ -1,0 +1,79 @@
+/* ---------------------------------- */
+/* ==main                           */
+/* ---------------------------------- */
+
+/**
+ * ==========================================================================
+ * CUSTOM FLAT COLORS
+ * Src : http://siecledigital.fr/wp-content/uploads/2015/05/couleurs-flat.jpg
+ * ==========================================================================
+ */
+$white:			#FFFFFF;
+$turquoise:     #47C9AF;
+$greenSea:      #16A086;
+$emerald:       #2DCC70;
+$nephritis:     #27AE61;
+$peterRiver:    #5CABE3;
+$belizeHole:    #297FB8;
+$amethyst:      #9A59B5;
+$wisteria:      #8D44AF;
+$wetAsphalt:    #34495C;
+$midnightBlue:  #2D3E50;
+$sunFlower:     #F1C40F;
+$orange:        #F39C11;
+$carrot:        #E48022;
+$pumpkin:       #D25400;
+$alizarin:      #EB6F63;
+$pomegranate:   #C1392B;
+$clouds:        #ECF0F1;
+$silver:        #BEC3C7;
+$concrete:      #95A5A5;
+$asbestos:      #7E8C8D;
+
+/**
+ * =============================
+ * CUSTOM FONTS
+ * Src : http://font.ubuntu.com/
+ * =============================
+ */
+@font-face {
+    font-family: Ubuntu;
+    src: url(fonts/Ubuntu/Ubuntu-L.ttf);
+}
+
+/**
+ * =============================
+ * CUSTOM STYLESHEETS
+ * Src : http://font.ubuntu.com/
+ * =============================
+ */
+body {
+	position: absolute;
+	top: 0; bottom: 0;
+	right: 0; left: 0;
+	background-color: $amethyst;
+	font-family: Ubuntu, Helvetica, sans-serif;
+}
+
+.top-line { margin-bottom: 15px; }
+
+.item-container { 
+	margin-top: 200px;
+	width: 70%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.item { 
+	line-height: 140px; 
+	& p { 
+		text-align: center; 
+		font-size: 2em;
+		color: $white;
+	}
+}
+
+.presentation { background-color: $peterRiver; }
+.img-portrait { height: 140px; margin: 0; padding: 0; }
+.projects { background-color: $alizarin; }
+.contact { background-color: $wetAsphalt; }

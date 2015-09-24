@@ -1,0 +1,935 @@
+@charset "UTF-8";
+/*
+Theme Name: nicolas-gigou
+Theme URI: http://nicolas-gigou.fr
+Author: Nicolas GIGOU
+Author URI: http://nicolas-gigou.fr
+Description: ThÔö£┬┐me WP by Nicolas GIGOU
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: nicolas-gigou
+Tags: none
+*/
+/*!
+* www.KNACSS.com V4.1.6 (2015-04-17) @author: Raphael Goetter, Alsacreations
+* Licence WTFPL http://www.wtfpl.net/
+*/
+/* ---------------------------------- */
+/* ==Grids                            */
+/* ---------------------------------- */
+/* line 20, sass/_03-grids.scss */
+[class*="grid-"] {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: -1em;
+}
+
+/* line 28, sass/_03-grids.scss */
+[class*="grid-"] > * {
+  flex: 0 0 auto;
+  display: block;
+  /* IE fix */
+  width: calc(100% * 1 / 4 - 1em);
+  margin-left: 1em;
+}
+
+/* line 38, sass/_03-grids.scss */
+.grid-2 > * {
+  width: calc(100% * 1 / 2 - 1em);
+}
+/* line 41, sass/_03-grids.scss */
+.grid-2 > .flex-item-double {
+  width: calc(100% * 2 / 2 - 1em);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* line 45, sass/_03-grids.scss */
+  .grid-2 > * {
+    width: calc(100% * 1 / 2 - 1em);
+  }
+  /* line 48, sass/_03-grids.scss */
+  .grid-2 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+@media (max-width: 480px) {
+  /* line 53, sass/_03-grids.scss */
+  .grid-2 > * {
+    width: calc(100% - 1em);
+  }
+  /* line 56, sass/_03-grids.scss */
+  .grid-2 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 38, sass/_03-grids.scss */
+.grid-3 > * {
+  width: calc(100% * 1 / 3 - 1em);
+}
+/* line 41, sass/_03-grids.scss */
+.grid-3 > .flex-item-double {
+  width: calc(100% * 2 / 3 - 1em);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* line 45, sass/_03-grids.scss */
+  .grid-3 > * {
+    width: calc(100% * 1 / 2 - 1em);
+  }
+  /* line 48, sass/_03-grids.scss */
+  .grid-3 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+@media (max-width: 480px) {
+  /* line 53, sass/_03-grids.scss */
+  .grid-3 > * {
+    width: calc(100% - 1em);
+  }
+  /* line 56, sass/_03-grids.scss */
+  .grid-3 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 38, sass/_03-grids.scss */
+.grid-4 > * {
+  width: calc(100% * 1 / 4 - 1em);
+}
+/* line 41, sass/_03-grids.scss */
+.grid-4 > .flex-item-double {
+  width: calc(100% * 2 / 4 - 1em);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* line 45, sass/_03-grids.scss */
+  .grid-4 > * {
+    width: calc(100% * 1 / 2 - 1em);
+  }
+  /* line 48, sass/_03-grids.scss */
+  .grid-4 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+@media (max-width: 480px) {
+  /* line 53, sass/_03-grids.scss */
+  .grid-4 > * {
+    width: calc(100% - 1em);
+  }
+  /* line 56, sass/_03-grids.scss */
+  .grid-4 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 38, sass/_03-grids.scss */
+.grid-5 > * {
+  width: calc(100% * 1 / 5 - 1em);
+}
+/* line 41, sass/_03-grids.scss */
+.grid-5 > .flex-item-double {
+  width: calc(100% * 2 / 5 - 1em);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* line 45, sass/_03-grids.scss */
+  .grid-5 > * {
+    width: calc(100% * 1 / 2 - 1em);
+  }
+  /* line 48, sass/_03-grids.scss */
+  .grid-5 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+@media (max-width: 480px) {
+  /* line 53, sass/_03-grids.scss */
+  .grid-5 > * {
+    width: calc(100% - 1em);
+  }
+  /* line 56, sass/_03-grids.scss */
+  .grid-5 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 38, sass/_03-grids.scss */
+.grid-6 > * {
+  width: calc(100% * 1 / 6 - 1em);
+}
+/* line 41, sass/_03-grids.scss */
+.grid-6 > .flex-item-double {
+  width: calc(100% * 2 / 6 - 1em);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* line 45, sass/_03-grids.scss */
+  .grid-6 > * {
+    width: calc(100% * 1 / 2 - 1em);
+  }
+  /* line 48, sass/_03-grids.scss */
+  .grid-6 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+@media (max-width: 480px) {
+  /* line 53, sass/_03-grids.scss */
+  .grid-6 > * {
+    width: calc(100% - 1em);
+  }
+  /* line 56, sass/_03-grids.scss */
+  .grid-6 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 38, sass/_03-grids.scss */
+.grid-7 > * {
+  width: calc(100% * 1 / 7 - 1em);
+}
+/* line 41, sass/_03-grids.scss */
+.grid-7 > .flex-item-double {
+  width: calc(100% * 2 / 7 - 1em);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* line 45, sass/_03-grids.scss */
+  .grid-7 > * {
+    width: calc(100% * 1 / 2 - 1em);
+  }
+  /* line 48, sass/_03-grids.scss */
+  .grid-7 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+@media (max-width: 480px) {
+  /* line 53, sass/_03-grids.scss */
+  .grid-7 > * {
+    width: calc(100% - 1em);
+  }
+  /* line 56, sass/_03-grids.scss */
+  .grid-7 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 38, sass/_03-grids.scss */
+.grid-8 > * {
+  width: calc(100% * 1 / 8 - 1em);
+}
+/* line 41, sass/_03-grids.scss */
+.grid-8 > .flex-item-double {
+  width: calc(100% * 2 / 8 - 1em);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* line 45, sass/_03-grids.scss */
+  .grid-8 > * {
+    width: calc(100% * 1 / 2 - 1em);
+  }
+  /* line 48, sass/_03-grids.scss */
+  .grid-8 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+@media (max-width: 480px) {
+  /* line 53, sass/_03-grids.scss */
+  .grid-8 > * {
+    width: calc(100% - 1em);
+  }
+  /* line 56, sass/_03-grids.scss */
+  .grid-8 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 38, sass/_03-grids.scss */
+.grid-10 > * {
+  width: calc(100% * 1 / 10 - 1em);
+}
+/* line 41, sass/_03-grids.scss */
+.grid-10 > .flex-item-double {
+  width: calc(100% * 2 / 10 - 1em);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* line 45, sass/_03-grids.scss */
+  .grid-10 > * {
+    width: calc(100% * 1 / 2 - 1em);
+  }
+  /* line 48, sass/_03-grids.scss */
+  .grid-10 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+@media (max-width: 480px) {
+  /* line 53, sass/_03-grids.scss */
+  .grid-10 > * {
+    width: calc(100% - 1em);
+  }
+  /* line 56, sass/_03-grids.scss */
+  .grid-10 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 38, sass/_03-grids.scss */
+.grid-12 > * {
+  width: calc(100% * 1 / 12 - 1em);
+}
+/* line 41, sass/_03-grids.scss */
+.grid-12 > .flex-item-double {
+  width: calc(100% * 2 / 12 - 1em);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* line 45, sass/_03-grids.scss */
+  .grid-12 > * {
+    width: calc(100% * 1 / 2 - 1em);
+  }
+  /* line 48, sass/_03-grids.scss */
+  .grid-12 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+@media (max-width: 480px) {
+  /* line 53, sass/_03-grids.scss */
+  .grid-12 > * {
+    width: calc(100% - 1em);
+  }
+  /* line 56, sass/_03-grids.scss */
+  .grid-12 > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 103, sass/_03-grids.scss */
+.grid-2-1 > *:nth-child(odd) {
+  width: calc(66.66667% - 1em);
+}
+/* line 107, sass/_03-grids.scss */
+.grid-2-1 > *:nth-child(even) {
+  width: calc(33.33333% - 1em);
+}
+@media (max-width: 480px) {
+  /* line 112, sass/_03-grids.scss */
+  .grid-2-1 > *:nth-child(n) {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 103, sass/_03-grids.scss */
+.grid-1-2 > *:nth-child(odd) {
+  width: calc(33.33333% - 1em);
+}
+/* line 107, sass/_03-grids.scss */
+.grid-1-2 > *:nth-child(even) {
+  width: calc(66.66667% - 1em);
+}
+@media (max-width: 480px) {
+  /* line 112, sass/_03-grids.scss */
+  .grid-1-2 > *:nth-child(n) {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 103, sass/_03-grids.scss */
+.grid-3-1 > *:nth-child(odd) {
+  width: calc(75% - 1em);
+}
+/* line 107, sass/_03-grids.scss */
+.grid-3-1 > *:nth-child(even) {
+  width: calc(25% - 1em);
+}
+@media (max-width: 480px) {
+  /* line 112, sass/_03-grids.scss */
+  .grid-3-1 > *:nth-child(n) {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 103, sass/_03-grids.scss */
+.grid-1-3 > *:nth-child(odd) {
+  width: calc(25% - 1em);
+}
+/* line 107, sass/_03-grids.scss */
+.grid-1-3 > *:nth-child(even) {
+  width: calc(75% - 1em);
+}
+@media (max-width: 480px) {
+  /* line 112, sass/_03-grids.scss */
+  .grid-1-3 > *:nth-child(n) {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 103, sass/_03-grids.scss */
+.grid-3-2 > *:nth-child(odd) {
+  width: calc(60% - 1em);
+}
+/* line 107, sass/_03-grids.scss */
+.grid-3-2 > *:nth-child(even) {
+  width: calc(40% - 1em);
+}
+@media (max-width: 480px) {
+  /* line 112, sass/_03-grids.scss */
+  .grid-3-2 > *:nth-child(n) {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 103, sass/_03-grids.scss */
+.grid-2-3 > *:nth-child(odd) {
+  width: calc(40% - 1em);
+}
+/* line 107, sass/_03-grids.scss */
+.grid-2-3 > *:nth-child(even) {
+  width: calc(60% - 1em);
+}
+@media (max-width: 480px) {
+  /* line 112, sass/_03-grids.scss */
+  .grid-2-3 > *:nth-child(n) {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 103, sass/_03-grids.scss */
+.grid-4-1 > *:nth-child(odd) {
+  width: calc(80% - 1em);
+}
+/* line 107, sass/_03-grids.scss */
+.grid-4-1 > *:nth-child(even) {
+  width: calc(20% - 1em);
+}
+@media (max-width: 480px) {
+  /* line 112, sass/_03-grids.scss */
+  .grid-4-1 > *:nth-child(n) {
+    width: calc(100% - 1em);
+  }
+}
+
+/* line 103, sass/_03-grids.scss */
+.grid-1-4 > *:nth-child(odd) {
+  width: calc(20% - 1em);
+}
+/* line 107, sass/_03-grids.scss */
+.grid-1-4 > *:nth-child(even) {
+  width: calc(80% - 1em);
+}
+@media (max-width: 480px) {
+  /* line 112, sass/_03-grids.scss */
+  .grid-1-4 > *:nth-child(n) {
+    width: calc(100% - 1em);
+  }
+}
+
+/* ----------------------------- */
+/* ==desktop and HD devices      */
+/* ----------------------------- */
+@media (min-width: 1025px) {
+  /* rules for big resources and big screens like: background-images, font-faces, etc. */
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  /* style adjustments for high density devices */
+}
+/* ---------------------------------- */
+/* ==Responsive large                 */
+/* ---------------------------------- */
+@media (min-width: 1025px) {
+  /* layouts for large screens */
+  /* line 20, sass/_07-responsive.scss */
+  .large-hidden {
+    display: none !important;
+  }
+
+  /* line 24, sass/_07-responsive.scss */
+  .large-visible {
+    display: block !important;
+  }
+
+  /* line 28, sass/_07-responsive.scss */
+  .large-no-float {
+    float: none;
+  }
+
+  /* line 32, sass/_07-responsive.scss */
+  .large-inbl {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  /* line 37, sass/_07-responsive.scss */
+  .large-row {
+    display: table;
+    table-layout: fixed;
+    width: 100% !important;
+  }
+
+  /* line 42, sass/_07-responsive.scss */
+  .large-col {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  /* widths for large screens */
+  /* line 48, sass/_07-responsive.scss */
+  .large-w25 {
+    width: 25% !important;
+  }
+
+  /* line 52, sass/_07-responsive.scss */
+  .large-w33 {
+    width: 33.3333% !important;
+  }
+
+  /* line 56, sass/_07-responsive.scss */
+  .large-w50 {
+    width: 50% !important;
+  }
+
+  /* line 60, sass/_07-responsive.scss */
+  .large-w66 {
+    width: 66.6666% !important;
+  }
+
+  /* line 64, sass/_07-responsive.scss */
+  .large-w75 {
+    width: 75% !important;
+  }
+
+  /* line 68, sass/_07-responsive.scss */
+  .large-w100,
+  .large-wauto {
+    display: block !important;
+    float: none !important;
+    clear: none !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border: 0;
+  }
+
+  /* margins for large screens */
+  /* line 80, sass/_07-responsive.scss */
+  .large-man,
+  .large-ma0 {
+    margin: 0 !important;
+  }
+}
+/* ---------------------------------- */
+/* ==Responsive medium                */
+/* ---------------------------------- */
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* layouts for medium screens */
+  /* line 93, sass/_07-responsive.scss */
+  .medium-hidden {
+    display: none !important;
+  }
+
+  /* line 97, sass/_07-responsive.scss */
+  .medium-visible {
+    display: block !important;
+  }
+
+  /* line 101, sass/_07-responsive.scss */
+  .medium-no-float {
+    float: none;
+  }
+
+  /* line 105, sass/_07-responsive.scss */
+  .medium-inbl {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  /* line 111, sass/_07-responsive.scss */
+  .medium-row {
+    display: table;
+    table-layout: fixed;
+    width: 100% !important;
+  }
+
+  /* line 117, sass/_07-responsive.scss */
+  .medium-col {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  /* widths for medium screens */
+  /* line 123, sass/_07-responsive.scss */
+  .medium-w25 {
+    width: 25% !important;
+  }
+
+  /* line 127, sass/_07-responsive.scss */
+  .medium-w33 {
+    width: 33.3333% !important;
+  }
+
+  /* line 131, sass/_07-responsive.scss */
+  .medium-w50 {
+    width: 50% !important;
+  }
+
+  /* line 135, sass/_07-responsive.scss */
+  .medium-w66 {
+    width: 66.6666% !important;
+  }
+
+  /* line 139, sass/_07-responsive.scss */
+  .medium-w75 {
+    width: 75% !important;
+  }
+
+  /* line 143, sass/_07-responsive.scss */
+  .medium-w100,
+  .medium-wauto {
+    display: block !important;
+    float: none !important;
+    clear: none !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border: 0;
+  }
+
+  /* margins for medium screens */
+  /* line 155, sass/_07-responsive.scss */
+  .medium-man,
+  .medium-ma0 {
+    margin: 0 !important;
+  }
+}
+/* ---------------------------------- */
+/* ==Responsive small                 */
+/* ---------------------------------- */
+@media (min-width: 481px) and (max-width: 768px) {
+  /* quick reset in small resolution and less */
+  /* line 168, sass/_07-responsive.scss */
+  .w600p,
+  .w700p,
+  .w800p,
+  .w960p,
+  .mw960p {
+    width: auto;
+    float: none;
+  }
+
+  /* layouts for small screens */
+  /* line 178, sass/_07-responsive.scss */
+  .small-hidden {
+    display: none !important;
+  }
+
+  /* line 182, sass/_07-responsive.scss */
+  .small-visible {
+    display: block !important;
+  }
+
+  /* line 186, sass/_07-responsive.scss */
+  .small-no-float {
+    float: none;
+  }
+
+  /* line 190, sass/_07-responsive.scss */
+  .small-inbl {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  /* line 196, sass/_07-responsive.scss */
+  .small-row {
+    display: table !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+  }
+
+  /* line 202, sass/_07-responsive.scss */
+  .small-col {
+    display: table-cell !important;
+    vertical-align: top !important;
+  }
+
+  /* widths for small screens */
+  /* line 208, sass/_07-responsive.scss */
+  .small-w25 {
+    width: 25% !important;
+  }
+
+  /* line 212, sass/_07-responsive.scss */
+  .small-w33 {
+    width: 33.3333% !important;
+  }
+
+  /* line 216, sass/_07-responsive.scss */
+  .small-w50 {
+    width: 50% !important;
+  }
+
+  /* line 220, sass/_07-responsive.scss */
+  .small-w66 {
+    width: 66.6666% !important;
+  }
+
+  /* line 224, sass/_07-responsive.scss */
+  .small-w75 {
+    width: 75% !important;
+  }
+
+  /* line 228, sass/_07-responsive.scss */
+  .small-w100,
+  .small-wauto {
+    display: block !important;
+    float: none !important;
+    clear: none !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border: 0;
+  }
+
+  /* margins for small screens */
+  /* line 240, sass/_07-responsive.scss */
+  .small-man,
+  .small-ma0 {
+    margin: 0 !important;
+  }
+
+  /* line 245, sass/_07-responsive.scss */
+  .small-pan,
+  .small-pa0 {
+    padding: 0 !important;
+  }
+}
+/* ---------------------------------- */
+/* ==Responsive tiny                  */
+/* ---------------------------------- */
+@media (max-width: 480px) {
+  /* quick small resolution reset */
+  /* line 259, sass/_07-responsive.scss */
+  .mod,
+  .col,
+  fieldset {
+    display: block !important;
+    float: none !important;
+    clear: none !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border: 0;
+  }
+
+  /* line 271, sass/_07-responsive.scss */
+  .flex-container {
+    flex-direction: column;
+  }
+
+  /* line 275, sass/_07-responsive.scss */
+  .w300p,
+  .w400p,
+  .w500p {
+    width: auto;
+    float: none;
+  }
+
+  /* line 282, sass/_07-responsive.scss */
+  .row {
+    display: block !important;
+    width: 100% !important;
+  }
+
+  /* layouts for tiny screens */
+  /* line 288, sass/_07-responsive.scss */
+  .tiny-hidden {
+    display: none !important;
+  }
+
+  /* line 292, sass/_07-responsive.scss */
+  .tiny-visible {
+    display: block !important;
+  }
+
+  /* line 296, sass/_07-responsive.scss */
+  .tiny-no-float {
+    float: none;
+  }
+
+  /* line 300, sass/_07-responsive.scss */
+  .tiny-inbl {
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+  }
+
+  /* line 306, sass/_07-responsive.scss */
+  .tiny-row {
+    display: table !important;
+    table-layout: fixed !important;
+    width: 100% !important;
+  }
+
+  /* line 312, sass/_07-responsive.scss */
+  .tiny-col {
+    display: table-cell !important;
+    vertical-align: top !important;
+  }
+
+  /* line 317, sass/_07-responsive.scss */
+  th,
+  td {
+    display: block !important;
+    width: auto !important;
+    text-align: left !important;
+  }
+
+  /* line 324, sass/_07-responsive.scss */
+  thead {
+    display: none;
+  }
+
+  /* widths for tiny screens */
+  /* line 329, sass/_07-responsive.scss */
+  .tiny-w25 {
+    width: 25% !important;
+  }
+
+  /* line 333, sass/_07-responsive.scss */
+  .tiny-w33 {
+    width: 33.3333% !important;
+  }
+
+  /* line 337, sass/_07-responsive.scss */
+  .tiny-w50 {
+    width: 50% !important;
+  }
+
+  /* line 341, sass/_07-responsive.scss */
+  .tiny-w66 {
+    width: 66.6666% !important;
+  }
+
+  /* line 345, sass/_07-responsive.scss */
+  .tiny-w75 {
+    width: 75% !important;
+  }
+
+  /* line 349, sass/_07-responsive.scss */
+  .tiny-w100,
+  .tiny-wauto {
+    display: block !important;
+    float: none !important;
+    clear: none !important;
+    width: auto !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border: 0;
+  }
+
+  /* margins for tiny screens */
+  /* line 361, sass/_07-responsive.scss */
+  .tiny-man,
+  .tiny-ma0 {
+    margin: 0 !important;
+  }
+
+  /* line 366, sass/_07-responsive.scss */
+  .tiny-pan,
+  .tiny-pa0 {
+    padding: 0 !important;
+  }
+}
+/* ----------------------------- */
+/* ==own stylesheet              */
+/* ----------------------------- */
+/* Here should go your own CSS styles */
+/* You can also link them with a Sass @import */
+/* @import "my-styles"; */
+/* ---------------------------------- */
+/* ==header                           */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* ==main                           */
+/* ---------------------------------- */
+/**
+ * ==========================================================================
+ * CUSTOM FLAT COLORS
+ * Src : http://siecledigital.fr/wp-content/uploads/2015/05/couleurs-flat.jpg
+ * ==========================================================================
+ */
+/**
+ * =============================
+ * CUSTOM FONTS
+ * Src : http://font.ubuntu.com/
+ * =============================
+ */
+@font-face {
+  font-family: Ubuntu;
+  src: url(fonts/Ubuntu/Ubuntu-L.ttf);
+}
+/**
+ * =============================
+ * CUSTOM STYLESHEETS
+ * Src : http://font.ubuntu.com/
+ * =============================
+ */
+/* line 50, sass/_NG-main.scss */
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #9A59B5;
+  font-family: Ubuntu, Helvetica, sans-serif;
+}
+
+/* line 58, sass/_NG-main.scss */
+.top-line {
+  margin-bottom: 15px;
+}
+
+/* line 60, sass/_NG-main.scss */
+.item-container {
+  margin-top: 200px;
+  width: 70%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 67, sass/_NG-main.scss */
+.item {
+  line-height: 140px;
+}
+/* line 69, sass/_NG-main.scss */
+.item p {
+  text-align: center;
+  font-size: 2em;
+  color: #FFFFFF;
+}
+
+/* line 76, sass/_NG-main.scss */
+.presentation {
+  background-color: #5CABE3;
+}
+
+/* line 77, sass/_NG-main.scss */
+.img-portrait {
+  height: 140px;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 78, sass/_NG-main.scss */
+.projects {
+  background-color: #EB6F63;
+}
+
+/* line 79, sass/_NG-main.scss */
+.contact {
+  background-color: #34495C;
+}
+
+/* ---------------------------------- */
+/* ==menus                           */
+/* ---------------------------------- */
+/* ---------------------------------- */
+/* ==footer                           */
+/* ---------------------------------- */
+/* - */
