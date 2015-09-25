@@ -876,7 +876,7 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #9A59B5;
+  background-color: #34495C;
   font-family: Ubuntu, Helvetica, sans-serif;
 }
 
@@ -888,25 +888,21 @@ body {
 /* line 60, sass/_NG-main.scss */
 .item-container {
   margin-top: 200px;
+  margin-bottom: 100px;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 67, sass/_NG-main.scss */
+/* line 68, sass/_NG-main.scss */
 .item {
   line-height: 140px;
 }
-/* line 69, sass/_NG-main.scss */
+/* line 70, sass/_NG-main.scss */
 .item p {
   text-align: center;
   font-size: 2em;
   color: #FFFFFF;
-}
-
-/* line 76, sass/_NG-main.scss */
-.presentation {
-  background-color: #5CABE3;
 }
 
 /* line 77, sass/_NG-main.scss */
@@ -917,13 +913,28 @@ body {
 }
 
 /* line 78, sass/_NG-main.scss */
-.projects {
-  background-color: #EB6F63;
+.presentation {
+  background-color: #2DCC70;
 }
 
 /* line 79, sass/_NG-main.scss */
+.projects {
+  background-color: #F1C40F;
+}
+
+/* line 80, sass/_NG-main.scss */
+.competences {
+  background-color: #9A59B5;
+}
+
+/* line 81, sass/_NG-main.scss */
+.tutoriels {
+  background-color: #EB6F63;
+}
+
+/* line 82, sass/_NG-main.scss */
 .contact {
-  background-color: #34495C;
+  background-color: #5CABE3;
 }
 
 /* ---------------------------------- */
@@ -932,4 +943,17 @@ body {
 /* ---------------------------------- */
 /* ==footer                           */
 /* ---------------------------------- */
-/* - */
+/* line 5, sass/_NG-footer.scss */
+#footer {
+  position: absolute;
+  bottom: 10px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 12, sass/_NG-footer.scss */
+#footer p span {
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 90%;
+}

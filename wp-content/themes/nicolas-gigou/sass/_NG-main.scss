@@ -51,7 +51,7 @@ body {
 	position: absolute;
 	top: 0; bottom: 0;
 	right: 0; left: 0;
-	background-color: $amethyst;
+	background-color: $wetAsphalt;
 	font-family: Ubuntu, Helvetica, sans-serif;
 }
 
@@ -59,6 +59,7 @@ body {
 
 .item-container { 
 	margin-top: 200px;
+	margin-bottom: 100px;
 	width: 70%;
 	margin-right: auto;
 	margin-left: auto;
@@ -73,7 +74,9 @@ body {
 	}
 }
 
-.presentation { background-color: $peterRiver; }
 .img-portrait { height: 140px; margin: 0; padding: 0; }
-.projects { background-color: $alizarin; }
-.contact { background-color: $wetAsphalt; }
+.presentation { background-color: $emerald; }
+.projects { background-color: $sunFlower; }
+.competences { background-color: $amethyst; }
+.tutoriels { background-color: $alizarin; }
+.contact { background-color: $peterRiver; }

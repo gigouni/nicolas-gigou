@@ -18,21 +18,27 @@ get_header(); ?>
 	<div class="item-container">
 
 		<!-- First row -->
-		<div class="top-line grid-2-1">
-			<div class="item portrait">
+		<div class="top-line grid-4">
+			<div class="item portrait small-row">
 				<img src="wp-content/themes/nicolas-gigou/images/portrait.png" class="img-portrait">
 			</div>
-			<div class="item presentation">
+			<div class="item presentation small-row">
 				<p>Présentation</p>
+			</div>
+			<div class="item projects flex-item-double small-row">
+				<p>Projets</p>
 			</div>
 		</div>
 
 		<!-- Second row -->
-		<div class="grid-2-1">
-			<div class="item projects">
-				<p>Projets</p>
+		<div class="grid-4">
+			<div class="item competences small-row">
+				<p>Compétences</p>
 			</div>
-			<div class="item contact">
+			<div class="item tutoriels flex-item-double small-row">
+				<p>Tutoriels</p>
+			</div>
+			<div class="item contact small-row">
 				<p>Contact</p>
 			</div>
 		</div>

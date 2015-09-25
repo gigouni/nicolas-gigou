@@ -2,4 +2,15 @@
 /* ==footer                           */
 /* ---------------------------------- */
 
-/* - */
+#footer {
+	position: absolute;
+	bottom: 10px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#footer p span {
+	color: $white;
+	text-align: center;
+	line-height: 90%;
+}

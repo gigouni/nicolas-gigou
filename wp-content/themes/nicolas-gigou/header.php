@@ -20,6 +20,5 @@
 	<header id="header" role="banner" class="line ptm txtcenter">
 		
 		<!-- Header content -->
-		<p><span class="span_top_page">Welcome !</span></p>
 
 	</header><!-- #masthead -->
