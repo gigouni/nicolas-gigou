@@ -20,28 +20,35 @@ $(document).ready(function()
 	 * A NEW VAR FOR EACH CONTENT
 	 * ============================
 	 */
+	
+	// The div which contains the items on the home page
 	var home_div				= $("#home_content");
 	var home_portrait_div 		= $(".portrait");
 	var home_presentation_div 	= $(".presentation");
-	var home_projets_div 		= $(".projects");
-	var home_competences_div 	= $(".competences");
-	var home_tutoriels_div 		= $(".tutoriels");
+	var home_projects_div 		= $(".projects");
+	var home_skills_div 		= $(".skills");
+	var home_tutorials_div 		= $(".tutorials");
 	var home_contact_div 		= $(".contact");
 
-	/**
-	 * ===========================================
-	 * ADD HOVER ON EACH ITEM
-	 * DID IN JS 'CAUSE NOT WORKING IN CSS WITH IE
-	 * ===========================================
-	 */
-	
 	// The div which contains the content of pages
-	var presentation_content = $("#presentation-content");
-	var project_content = $("#project-content");
+	var presentation_content = $("#presentation_content");
+	var projects_content = $("#projects_content");
+	var skills_content = $("#skills_content");
+	var tutorials_content = $("#tutorials_content");
+	var contact_content = $("#contact_content");
+
+	/**
+	 * =================================
+	 * DISPLAY ITEM PANEL ON CLICK EVENT
+	 * =================================
+	 */
 
 	// Hide by default - Until the user click on it
 	presentation_content.hide();
-	project_content.hide();
+	projects_content.hide();
+	skills_content.hide();
+	tutorials_content.hide();
+	contact_content.hide();
 
 	// When the user click on the presentation item
 	// To click on this, we are on the home page, no alternatives
@@ -52,12 +59,40 @@ $(document).ready(function()
 
 	});
 
-	// When the user click on the poject item
+	// When the user click on the project item
 	// To click on this, we are on the home page, no alternatives
-	home_projets_div.click( function() 
+	home_projects_div.click( function() 
 	{
 		home_div.slideToggle();
-		project_content.slideToggle();
+		projects_content.slideToggle();
+
+	});
+
+	// When the user click on the skills item
+	// To click on this, we are on the home page, no alternatives
+	home_skills_div.click( function() 
+	{
+		console.log("home skills div clicked");
+		home_div.slideToggle();
+		skills_content.slideToggle();
+
+	});
+
+	// When the user click on the tutorials item
+	// To click on this, we are on the home page, no alternatives
+	home_tutorials_div.click( function() 
+	{
+		home_div.slideToggle();
+		tutorials_content.slideToggle();
+
+	});
+
+	// When the user click on the contact item
+	// To click on this, we are on the home page, no alternatives
+	home_contact_div.click( function() 
+	{
+		home_div.slideToggle();
+		contact_content.slideToggle();
 
 	});
 

@@ -40,10 +40,10 @@ get_header(); ?>
 
 			<!-- Second row -->
 			<div class="grid-4">
-				<div class="item competences">
+				<div class="item skills">
 					<p>Compétences</p>
 				</div>
-				<div class="item tutoriels flex-item-double">
+				<div class="item tutorials flex-item-double">
 					<p>Tutoriels</p>
 				</div>
 				<div class="item contact">
@@ -60,7 +60,7 @@ get_header(); ?>
 			DIV SHOWN ONLY ON THE HOME PAGE (OBVIOUSLY ...)
 			=============================================================
 		-->
-		<div id="presentation-content" class="presentation">
+		<div id="presentation_content" class="presentation">
 			<pre>
 				<code class="hljs json">
 	[ { 
@@ -91,7 +91,85 @@ get_header(); ?>
 			DIV SHOWN ONLY ON THE HOME PAGE (OBVIOUSLY ...)
 			=============================================================
 		-->
-		<div id="project-content" class="project">
+		<div id="projects_content" class="projects">
+			<p><span class="project-intro">Listes des projets auxquels j'ai eu le plaisir de participer :</span></p>
+
+			<!-- First row -->
+			<div class="top-line grid-4">
+				<div class="item-project">
+					<p>Projet de site dans le cadre d'un cours d'anglais</p>
+				</div>
+				<div class="item-project">
+					<p>Crêperie Tymaï - Trégastel (22)</p>
+				</div>
+				<div class="item-project">
+					<p>Groupe REMS de l'ENSTA Bretagne - Brest (29)</p>
+				</div>
+				<div class="item-project">
+					<p>Page personnelle de Mr KHENCHAF Ali, responsable du groupe REMS de l'ENSTA Bretagne</p>
+				</div>
+			</div>
+
+			<!-- Second row -->
+			<div class="grid-4">
+				<div class="item-project">
+					<p>LAMBE conduite - Brest (29)</p>
+				</div>
+				<div class="item-project flex-item-double">
+					<p>Site vitrine personnel nicolas-gigou.fr</p>
+				</div>
+				<div class="item-project">
+					<p>Application mobile multilangue d'apprentissage au développement - Partage avec les étudiants d'une promo</p>
+				</div>
+			</div>	
+		</div>
+
+
+		<!--
+			=============================================================
+			CONTENT OF THE SKILLS PAGE
+			=============================================================
+		-->
+		<div id="skills_content" class="skills">
+			<p><span class="project-intro">Listes des projets auxquels j'ai eu le plaisir de participer :</span></p>
+
+			<!-- First row -->
+			<div class="top-line grid-4">
+				<div class="item-project projects">
+					<p>Projet de site dans le cadre d'un cous d'anglais</p>
+				</div>
+				<div class="item-project">
+					<p>Crêperie Tymaï - Trégastel (22)</p>
+				</div>
+				<div class="item-project presentation">
+					<p>Groupe REMS de l'ENSTA Bretagne - Brest (29)</p>
+				</div>
+				<div class="item-project projects">
+					<p>Page personnelle de Mr KHENCHAF Ali, responsable du groupe REMS de l'ENSTA Bretagne</p>
+				</div>
+			</div>
+
+			<!-- Second row -->
+			<div class="grid-4">
+				<div class="item-project competences">
+					<p>LAMBE conduite - Brest (29)</p>
+				</div>
+				<div class="item-project tutoriels flex-item-double">
+					<p>Site vitrine personnel nicolas-gigou.fr</p>
+				</div>
+				<div class="item-project contact">
+					<p>Application mobile multilangue d'apprentissage au développement - Partage avec les étudiants d'une promo</p>
+				</div>
+			</div>	
+		</div>
+
+
+		<!--
+			=============================================================
+			CONTENT OF THE TUTORIALS PAGE
+			=============================================================
+		-->
+		<div id="tutorials_content" class="tutorials">
 			<p><span class="project-intro">Listes des projets auxquels j'ai eu le plaisir de participer :</span></p>
 			<!-- 
 				parseur php ?
@@ -124,7 +202,46 @@ get_header(); ?>
 					<p>Site vitrine personnel nicolas-gigou.fr</p>
 				</div>
 				<div class="item-project contact">
-					<p>Appliction mobile multilangue d'apprentissage au développement - Partage avec les étudiants d'une promo</p>
+					<p>Application mobile multilangue d'apprentissage au développement - Partage avec les étudiants d'une promo</p>
+				</div>
+			</div>	
+		</div>
+
+
+		<!--
+			=============================================================
+			CONTENT OF THE CONTACT PAGE
+			=============================================================
+		-->
+		<div id="contact_content" class="contact">
+			<p><span class="project-intro">Listes des projets auxquels j'ai eu le plaisir de participer :</span></p>
+
+			<!-- First row -->
+			<div class="top-line grid-4">
+				<div class="item-project projects">
+					<p>Projet de site dans le cadre d'un cous d'anglais</p>
+				</div>
+				<div class="item-project">
+					<p>Crêperie Tymaï - Trégastel (22)</p>
+				</div>
+				<div class="item-project presentation">
+					<p>Groupe REMS de l'ENSTA Bretagne - Brest (29)</p>
+				</div>
+				<div class="item-project projects">
+					<p>Page personnelle de Mr KHENCHAF Ali</p>
+				</div>
+			</div>
+
+			<!-- Second row -->
+			<div class="grid-4">
+				<div class="item-project competences">
+					<p>LAMBE conduite - Brest (29)</p>
+				</div>
+				<div class="item-project tutoriels flex-item-double">
+					<p>Site vitrine personnel nicolas-gigou.fr</p>
+				</div>
+				<div class="item-project contact">
+					<p>Application mobile multilangue</p>
 				</div>
 			</div>	
 		</div>

@@ -87,8 +87,8 @@ body {
 .img-portrait { height: 140px; margin: 0; padding: 0; }
 .presentation { background-color: $emerald; }
 .projects { background-color: $sunFlower; }
-.competences { background-color: $amethyst; }
-.tutoriels { background-color: $alizarin; }
+.skills { background-color: $amethyst; }
+.tutorials { background-color: $alizarin; }
 .contact { background-color: $peterRiver; }
 
 
@@ -98,7 +98,7 @@ body {
  * 		--- CONTENT PAGE
  * =============================
  */
-#presentation-content {
+#presentation_content {
 	background-color: #282B2E;
 	overflow-x: hidden;
 	height: 400px;

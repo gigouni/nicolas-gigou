@@ -932,12 +932,12 @@ body {
 }
 
 /* line 90, sass/_NG-main.scss */
-.competences {
+.skills {
   background-color: #9A59B5;
 }
 
 /* line 91, sass/_NG-main.scss */
-.tutoriels {
+.tutorials {
   background-color: #EB6F63;
 }
 
@@ -953,13 +953,13 @@ body {
  * =============================
  */
 /* line 101, sass/_NG-main.scss */
-#presentation-content {
+#presentation_content {
   background-color: #282B2E;
   overflow-x: hidden;
   height: 400px;
 }
 /* line 105, sass/_NG-main.scss */
-#presentation-content code {
+#presentation_content code {
   height: 100%;
   font-size: 1.2em;
 }
