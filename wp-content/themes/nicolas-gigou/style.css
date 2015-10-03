@@ -866,7 +866,7 @@ Tags: none
 /**
  * =============================
  * CUSTOM STYLESHEETS
- * Src : http://font.ubuntu.com/
+ * 		--- GLOBAL
  * =============================
  */
 /* line 50, sass/_NG-main.scss */
@@ -876,65 +876,92 @@ body {
   bottom: 0;
   right: 0;
   left: 0;
-  background-color: #34495C;
+  background-color: #597d9d;
   font-family: Ubuntu, Helvetica, sans-serif;
 }
 
 /* line 58, sass/_NG-main.scss */
-.top-line {
-  margin-bottom: 15px;
-}
-
-/* line 60, sass/_NG-main.scss */
 .item-container {
-  margin-top: 200px;
+  /*margin-top: 150px;*/
+  margin-top: 10%;
   margin-bottom: 100px;
+  position: relative;
+  overflow: hidden;
   width: 70%;
   margin-right: auto;
   margin-left: auto;
 }
 
-/* line 68, sass/_NG-main.scss */
+/**
+ * =============================
+ * CUSTOM STYLESHEETS
+ * 		--- HOME PAGE
+ * =============================
+ */
+/* line 76, sass/_NG-main.scss */
+.top-line {
+  margin-bottom: 15px;
+}
+
+/* line 78, sass/_NG-main.scss */
 .item {
   line-height: 140px;
 }
-/* line 70, sass/_NG-main.scss */
+/* line 80, sass/_NG-main.scss */
 .item p {
   text-align: center;
   font-size: 2em;
   color: #FFFFFF;
 }
 
-/* line 77, sass/_NG-main.scss */
+/* line 87, sass/_NG-main.scss */
 .img-portrait {
   height: 140px;
   margin: 0;
   padding: 0;
 }
 
-/* line 78, sass/_NG-main.scss */
+/* line 88, sass/_NG-main.scss */
 .presentation {
   background-color: #2DCC70;
 }
 
-/* line 79, sass/_NG-main.scss */
+/* line 89, sass/_NG-main.scss */
 .projects {
   background-color: #F1C40F;
 }
 
-/* line 80, sass/_NG-main.scss */
+/* line 90, sass/_NG-main.scss */
 .competences {
   background-color: #9A59B5;
 }
 
-/* line 81, sass/_NG-main.scss */
+/* line 91, sass/_NG-main.scss */
 .tutoriels {
   background-color: #EB6F63;
 }
 
-/* line 82, sass/_NG-main.scss */
+/* line 92, sass/_NG-main.scss */
 .contact {
   background-color: #5CABE3;
+}
+
+/**
+ * =============================
+ * CUSTOM STYLESHEETS
+ * 		--- CONTENT PAGE
+ * =============================
+ */
+/* line 101, sass/_NG-main.scss */
+#presentation-content {
+  background-color: #282B2E;
+  overflow-x: hidden;
+  height: 400px;
+}
+/* line 105, sass/_NG-main.scss */
+#presentation-content code {
+  height: 100%;
+  font-size: 1.2em;
 }
 
 /* ---------------------------------- */
@@ -944,16 +971,16 @@ body {
 /* ==footer                           */
 /* ---------------------------------- */
 /* line 5, sass/_NG-footer.scss */
-#footer {
+.footer-container {
   position: absolute;
   bottom: 10px;
-  margin-right: auto;
-  margin-left: auto;
+  right: 0;
+  left: 0;
 }
 
 /* line 12, sass/_NG-footer.scss */
-#footer p span {
+.footer-container p {
   color: #FFFFFF;
   text-align: center;
-  line-height: 90%;
+  line-height: 30%;
 }

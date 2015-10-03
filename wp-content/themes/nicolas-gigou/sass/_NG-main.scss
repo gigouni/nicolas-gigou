@@ -44,26 +44,36 @@ $asbestos:      #7E8C8D;
 /**
  * =============================
  * CUSTOM STYLESHEETS
- * Src : http://font.ubuntu.com/
+ * 		--- GLOBAL
  * =============================
  */
 body {
 	position: absolute;
 	top: 0; bottom: 0;
 	right: 0; left: 0;
-	background-color: $wetAsphalt;
+	background-color: lighten($wetAsphalt,20%);
 	font-family: Ubuntu, Helvetica, sans-serif;
 }
 
-.top-line { margin-bottom: 15px; }
-
 .item-container { 
-	margin-top: 200px;
+	/*margin-top: 150px;*/
+	margin-top: 10%;
 	margin-bottom: 100px;
+	position: relative;
+	overflow: hidden;
 	width: 70%;
 	margin-right: auto;
 	margin-left: auto;
 }
+
+/**
+ * =============================
+ * CUSTOM STYLESHEETS
+ * 		--- HOME PAGE
+ * =============================
+ */
+
+.top-line { margin-bottom: 15px; }
 
 .item { 
 	line-height: 140px; 
@@ -80,3 +90,17 @@ body {
 .competences { background-color: $amethyst; }
 .tutoriels { background-color: $alizarin; }
 .contact { background-color: $peterRiver; }
+
+
+/**
+ * =============================
+ * CUSTOM STYLESHEETS
+ * 		--- CONTENT PAGE
+ * =============================
+ */
+#presentation-content {
+	background-color: #282B2E;
+	overflow-x: hidden;
+	height: 400px;
+	& code { height: 100%; font-size: 1.2em; }
+}
