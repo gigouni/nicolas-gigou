@@ -2,6 +2,7 @@
 /* ==main                           */
 /* ---------------------------------- */
 
+
 /**
  * ==========================================================================
  * CUSTOM FLAT COLORS
@@ -55,12 +56,11 @@ body {
 	font-family: Ubuntu, Helvetica, sans-serif;
 }
 
-.item-container { 
-	/*margin-top: 150px;*/
+.item-container {
 	margin-top: 10%;
 	margin-bottom: 100px;
 	position: relative;
-	overflow: hidden;
+	/*overflow: hidden;*/
 	width: 70%;
 	margin-right: auto;
 	margin-left: auto;
@@ -82,14 +82,14 @@ body {
 		font-size: 2em;
 		color: $white;
 	}
-}
 
-.img-portrait { height: 140px; margin: 0; padding: 0; }
-.presentation { background-color: $emerald; }
-.projects { background-color: $sunFlower; }
-.skills { background-color: $amethyst; }
-.tutorials { background-color: $alizarin; }
-.contact { background-color: $peterRiver; }
+	& .img-portrait { height: 140px; margin: 0; padding: 0; }
+	&.presentation { background-color: $emerald; }
+	&.projects { background-color: lighten($orange, 10%); }
+	&.skills { background-color: $amethyst; }
+	&.tutorials { background-color: $alizarin; }
+	&.contact { background-color: $peterRiver; }
+}
 
 
 /**
@@ -100,7 +100,22 @@ body {
  */
 #presentation_content {
 	background-color: #282B2E;
-	overflow-x: hidden;
-	height: 400px;
-	& code { height: 100%; font-size: 1.2em; }
+	& code { font-size: 1.2em; }
+}
+
+.push-right { 
+	position: relative;
+    right: 0px; 
+    bottom: 0px; 
+}
+
+.btn_back_home {
+	border: 0;
+	color: $white;
+	font-size: 20px;
+	background: $silver;
+	padding: 10px 20px 10px 20px;
+	&:hover {
+		background: $concrete;
+	}
 }

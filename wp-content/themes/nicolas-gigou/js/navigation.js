@@ -13,22 +13,15 @@ $(document).ready(function()
 	 * ADD BY QUICK AND DIRTY METHOD DIRECTLY IN THE HEAD
 	 * ==================================================
 	 */
-
-	/**
-	 * ============================
-	 * SELECTION OF THE CONTENT DIV
-	 * A NEW VAR FOR EACH CONTENT
-	 * ============================
-	 */
 	
 	// The div which contains the items on the home page
 	var home_div				= $("#home_content");
-	var home_portrait_div 		= $(".portrait");
-	var home_presentation_div 	= $(".presentation");
-	var home_projects_div 		= $(".projects");
-	var home_skills_div 		= $(".skills");
-	var home_tutorials_div 		= $(".tutorials");
-	var home_contact_div 		= $(".contact");
+	var home_portrait_div 		= $("#home_content .portrait");
+	var home_presentation_div 	= $("#home_content .presentation");
+	var home_projects_div 		= $("#home_content .projects");
+	var home_skills_div 		= $("#home_content .skills");
+	var home_tutorials_div 		= $("#home_content .tutorials");
+	var home_contact_div 		= $("#home_content .contact");
 
 	// The div which contains the content of pages
 	var presentation_content = $("#presentation_content");
@@ -54,8 +47,8 @@ $(document).ready(function()
 	// To click on this, we are on the home page, no alternatives
 	home_presentation_div.click( function() 
 	{
-		home_div.slideToggle();
-		presentation_content.slideToggle();
+		home_div.toggle(400);
+		presentation_content.toggle(400);
 
 	});
 
@@ -63,8 +56,8 @@ $(document).ready(function()
 	// To click on this, we are on the home page, no alternatives
 	home_projects_div.click( function() 
 	{
-		home_div.slideToggle();
-		projects_content.slideToggle();
+		home_div.toggle(400);
+		projects_content.toggle(400);
 
 	});
 
@@ -72,9 +65,8 @@ $(document).ready(function()
 	// To click on this, we are on the home page, no alternatives
 	home_skills_div.click( function() 
 	{
-		console.log("home skills div clicked");
-		home_div.slideToggle();
-		skills_content.slideToggle();
+		home_div.toggle(400);
+		skills_content.toggle(400);
 
 	});
 
@@ -82,8 +74,8 @@ $(document).ready(function()
 	// To click on this, we are on the home page, no alternatives
 	home_tutorials_div.click( function() 
 	{
-		home_div.slideToggle();
-		tutorials_content.slideToggle();
+		home_div.toggle(400);
+		tutorials_content.toggle(400);
 
 	});
 
@@ -91,9 +83,37 @@ $(document).ready(function()
 	// To click on this, we are on the home page, no alternatives
 	home_contact_div.click( function() 
 	{
-		home_div.slideToggle();
-		contact_content.slideToggle();
+		home_div.toggle(400);
+		contact_content.toggle(400);
 
 	});
 
 });
+
+
+/**
+ * ==========================================================
+ * CUSTOM FUNCTION
+ * PERMITS TO GO BACK THE HOME PANEL AND HIDE THE CURRENT ONE
+ * ==========================================================
+ */
+function goBackHome(p)
+{
+	// The div which contains the content of pages
+	var home_div = $("#home_content");
+	var presentation_content = $("#presentation_content");
+	var projects_content = $("#projects_content");
+	var skills_content = $("#skills_content");
+	var tutorials_content = $("#tutorials_content");
+	var contact_content = $("#contact_content");
+
+	// Toggle (hide with animation) the current panel
+	if( p == "presentation" )	{ presentation_content.toggle(400); }
+	if( p == "projects" )		{ projects_content.toggle(400); }
+	if( p == "skills" )			{ skills_content.toggle(400); }
+	if( p == "tutorials" )		{ tutorials_content.toggle(400); }
+	if( p == "contact" )		{ contact_content.toggle(400); }
+
+	// Toggle (show) the home panel in all cases
+	home_div.toggle(400);
+}
