@@ -4,11 +4,14 @@
 
 
 /**
- * ==========================================================================
+ * ============================================================================================
  * CUSTOM FLAT COLORS
  * Src : http://siecledigital.fr/wp-content/uploads/2015/05/couleurs-flat.jpg
- * ==========================================================================
+ * Src : http://www.colourlovers.com/digital-art/trends/branding/7880/Papeterie_Haute-Ville_Logo
+ * =============================================================================================
  */
+
+// Part 1
 $white:			#FFFFFF;
 $turquoise:     #47C9AF;
 $greenSea:      #16A086;
@@ -22,6 +25,7 @@ $wetAsphalt:    #34495C;
 $midnightBlue:  #2D3E50;
 $sunFlower:     #F1C40F;
 $orange:        #F39C11;
+$lightOrange:	#F5B042;
 $carrot:        #E48022;
 $pumpkin:       #D25400;
 $alizarin:      #EB6F63;
@@ -31,9 +35,21 @@ $silver:        #BEC3C7;
 $concrete:      #95A5A5;
 $asbestos:      #7E8C8D;
 
+// Part 2
+$darkBlue:		#113F8C;
+$blueGreen:		#01A4A4;
+$blue:			#00A1CB;
+$green:			#61AE24;
+$greenYellow:	#D0D102;
+$darkGreen:		#32742C;
+$darkPink:		#D70060;
+$lightRed:		#E54028;
+$grey: 			#616161;
+
 /**
  * =============================
  * CUSTOM FONTS
+ *     -- Font Ubuntu
  * Src : http://font.ubuntu.com/
  * =============================
  */
@@ -57,11 +73,10 @@ body {
 }
 
 .item-container {
-	margin-top: 10%;
+	margin-top: 15%;
 	margin-bottom: 100px;
 	position: relative;
-	/*overflow: hidden;*/
-	width: 70%;
+	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -73,22 +88,42 @@ body {
  * =============================
  */
 
-.top-line { margin-bottom: 15px; }
+.line-space-bottom { margin-bottom: 15px; }
 
 .item { 
-	line-height: 140px; 
+	line-height: 140px;
+	cursor: pointer;
 	& p { 
 		text-align: center; 
 		font-size: 2em;
 		color: $white;
 	}
 
-	& .img-portrait { height: 140px; margin: 0; padding: 0; }
-	&.presentation { background-color: $emerald; }
-	&.projects { background-color: lighten($orange, 10%); }
-	&.skills { background-color: $amethyst; }
-	&.tutorials { background-color: $alizarin; }
-	&.contact { background-color: $peterRiver; }
+	&.welcome { background-color: $asbestos; cursor: default; }
+	&.presentation { background-color: $emerald; &:hover { background-color: $nephritis; }}
+	&.projects { background-color: $lightOrange; &:hover { background-color: $orange; }}
+	&.skills { background-color: $amethyst; &:hover { background-color: $wisteria; }}
+	&.tutorials { background-color: $alizarin; &:hover { background-color: $pomegranate; }}
+	&.contact { background-color: $peterRiver; &:hover { background-color: $belizeHole; }}
+}
+
+.btn_back_home {
+	border: 0;
+	color: $white;
+	background: $silver;
+	padding: 10px 20px;
+	float: right;
+	&:hover {
+		background: $concrete;	
+	}
+}
+
+.push-right { 
+}
+
+.grid-custom-5col { 
+	@include grid(5); 
+	text-align: center;
 }
 
 
@@ -103,19 +138,57 @@ body {
 	& code { font-size: 1.2em; }
 }
 
-.push-right { 
-	position: relative;
-    right: 0px; 
-    bottom: 0px; 
+#projects_content {
+	& p span.projects-intro { color: $white; }
+	& .item p { font-size: 1.2em; line-height: 300%; }
+
+	& .project-one { background-color: lighten($darkBlue, 20%); }
+	& .project-two { background-color: $blueGreen; }
+	& .project-three { background-color: $blue; }
+	& .project-four { background-color: $green; }
+	& .project-five { background-color: $lightOrange; }
+	& .project-six { background-color: lighten($lightRed, 10%); }
+	& .project-seven { background-color: $grey; }
 }
 
-.btn_back_home {
-	border: 0;
+#skills_content {
+	overflow-y: scroll;
+	height: 500px;
+	background-color: $amethyst;
+	padding: 10px;
 	color: $white;
-	font-size: 20px;
-	background: $silver;
-	padding: 10px 20px 10px 20px;
-	&:hover {
-		background: $concrete;
+
+	& p span.skills_title_skill {
+		font-size: 1.5em;
+		color: $sunFlower;
+		margin-top: 20px;
 	}
+
+	& i.fa {
+		vertical-align: middle;
+		padding-right: 15px;
+	}
+
+}
+
+#tutorials_content {
+	height: 400px;
+	line-height: 400px;
+	background-color: $alizarin;
+	text-align: center;
+	& p {
+		font-size: 1.5em;
+		color: $white;
+	}
+}
+
+#contact_content {
+	background-color: $peterRiver;
+	color: $white;
+	height: 450px;
+	& iframe { width: 100%; }
+	& p span.contact_contact_title {
+		font-size: 1.5em;
+	}
+	& .contact_contact_way { margin-bottom: 50px; }
 }

@@ -12,7 +12,7 @@
 
 get_header(); ?>
 
-<div id="main" role="main" class="mw1440p center">
+<div id="main" role="main" class="mw1640p center">
 
 	<!-- Content of the page -->
 	<div class="item-container">
@@ -26,28 +26,28 @@ get_header(); ?>
 		-->
 		<div id="home_content">
 			<!-- First row -->
-			<div class="top-line grid-4">
-				<div class="item portrait">
-					<img src="wp-content/themes/nicolas-gigou/images/portrait.png" class="img-portrait">
+			<div class="line-space-bottom grid-4">
+				<div class="item welcome">
+					<p>Les rubriques <i class="fa fa-arrow-right"></i></p>
 				</div>
 				<div class="item presentation">
-					<p>Présentation</p>
+					<p><i class="fa fa-info"></i> Présentation</p>
 				</div>
 				<div class="item projects flex-item-double">
-					<p>Projets</p>
+					<p><i class="fa fa-desktop"></i> Projets</p>
 				</div>
 			</div>
 
 			<!-- Second row -->
 			<div class="grid-4">
 				<div class="item skills">
-					<p>Compétences</p>
+					<p><i class="fa fa-graduation-cap"></i> Compétences</p>
 				</div>
 				<div class="item tutorials flex-item-double">
-					<p>Tutoriels</p>
+					<p><i class="fa fa-certificate"></i> Tutoriels</p>
 				</div>
 				<div class="item contact">
-					<p>Contact</p>
+					<p><i class="fa fa-send"></i> Contact</p>
 				</div>
 			</div>	
 		</div>

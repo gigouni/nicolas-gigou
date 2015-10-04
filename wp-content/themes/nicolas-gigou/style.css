@@ -844,18 +844,34 @@ Tags: none
 /* ---------------------------------- */
 /* ==header                           */
 /* ---------------------------------- */
+/* line 5, sass/_NG-header.scss */
+#header {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  left: 0;
+}
+/* line 9, sass/_NG-header.scss */
+#header p {
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 1.3em;
+}
+
 /* ---------------------------------- */
 /* ==main                           */
 /* ---------------------------------- */
 /**
- * ==========================================================================
+ * ============================================================================================
  * CUSTOM FLAT COLORS
  * Src : http://siecledigital.fr/wp-content/uploads/2015/05/couleurs-flat.jpg
- * ==========================================================================
+ * Src : http://www.colourlovers.com/digital-art/trends/branding/7880/Papeterie_Haute-Ville_Logo
+ * =============================================================================================
  */
 /**
  * =============================
  * CUSTOM FONTS
+ *     -- Font Ubuntu
  * Src : http://font.ubuntu.com/
  * =============================
  */
@@ -869,7 +885,7 @@ Tags: none
  * 		--- GLOBAL
  * =============================
  */
-/* line 51, sass/_NG-main.scss */
+/* line 67, sass/_NG-main.scss */
 body {
   position: absolute;
   top: 0;
@@ -880,13 +896,12 @@ body {
   font-family: Ubuntu, Helvetica, sans-serif;
 }
 
-/* line 59, sass/_NG-main.scss */
+/* line 75, sass/_NG-main.scss */
 .item-container {
-  margin-top: 10%;
+  margin-top: 15%;
   margin-bottom: 100px;
   position: relative;
-  /*overflow: hidden;*/
-  width: 70%;
+  width: 90%;
   margin-right: auto;
   margin-left: auto;
 }
@@ -897,46 +912,112 @@ body {
  * 		--- HOME PAGE
  * =============================
  */
-/* line 76, sass/_NG-main.scss */
-.top-line {
+/* line 91, sass/_NG-main.scss */
+.line-space-bottom {
   margin-bottom: 15px;
 }
 
-/* line 78, sass/_NG-main.scss */
+/* line 93, sass/_NG-main.scss */
 .item {
   line-height: 140px;
+  cursor: pointer;
 }
-/* line 80, sass/_NG-main.scss */
+/* line 96, sass/_NG-main.scss */
 .item p {
   text-align: center;
   font-size: 2em;
   color: #FFFFFF;
 }
-/* line 86, sass/_NG-main.scss */
-.item .img-portrait {
-  height: 140px;
-  margin: 0;
-  padding: 0;
+/* line 102, sass/_NG-main.scss */
+.item.welcome {
+  background-color: #7E8C8D;
+  cursor: default;
 }
-/* line 87, sass/_NG-main.scss */
+/* line 103, sass/_NG-main.scss */
 .item.presentation {
   background-color: #2DCC70;
 }
-/* line 88, sass/_NG-main.scss */
-.item.projects {
-  background-color: #f5b042;
+/* line 103, sass/_NG-main.scss */
+.item.presentation:hover {
+  background-color: #27AE61;
 }
-/* line 89, sass/_NG-main.scss */
+/* line 104, sass/_NG-main.scss */
+.item.projects {
+  background-color: #F5B042;
+}
+/* line 104, sass/_NG-main.scss */
+.item.projects:hover {
+  background-color: #F39C11;
+}
+/* line 105, sass/_NG-main.scss */
 .item.skills {
   background-color: #9A59B5;
 }
-/* line 90, sass/_NG-main.scss */
+/* line 105, sass/_NG-main.scss */
+.item.skills:hover {
+  background-color: #8D44AF;
+}
+/* line 106, sass/_NG-main.scss */
 .item.tutorials {
   background-color: #EB6F63;
 }
-/* line 91, sass/_NG-main.scss */
+/* line 106, sass/_NG-main.scss */
+.item.tutorials:hover {
+  background-color: #C1392B;
+}
+/* line 107, sass/_NG-main.scss */
 .item.contact {
   background-color: #5CABE3;
+}
+/* line 107, sass/_NG-main.scss */
+.item.contact:hover {
+  background-color: #297FB8;
+}
+
+/* line 110, sass/_NG-main.scss */
+.btn_back_home {
+  border: 0;
+  color: #FFFFFF;
+  background: #BEC3C7;
+  padding: 10px 20px;
+  float: right;
+}
+/* line 116, sass/_NG-main.scss */
+.btn_back_home:hover {
+  background: #95A5A5;
+}
+
+/* line 124, sass/_NG-main.scss */
+.grid-custom-5col {
+  text-align: center;
+}
+/* line 38, sass/_03-grids.scss */
+.grid-custom-5col > * {
+  width: calc(100% * 1 / 5 - 1em);
+}
+/* line 41, sass/_03-grids.scss */
+.grid-custom-5col > .flex-item-double {
+  width: calc(100% * 2 / 5 - 1em);
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  /* line 45, sass/_03-grids.scss */
+  .grid-custom-5col > * {
+    width: calc(100% * 1 / 2 - 1em);
+  }
+  /* line 48, sass/_03-grids.scss */
+  .grid-custom-5col > .flex-item-double {
+    width: calc(100% - 1em);
+  }
+}
+@media (max-width: 480px) {
+  /* line 53, sass/_03-grids.scss */
+  .grid-custom-5col > * {
+    width: calc(100% - 1em);
+  }
+  /* line 56, sass/_03-grids.scss */
+  .grid-custom-5col > .flex-item-double {
+    width: calc(100% - 1em);
+  }
 }
 
 /**
@@ -945,33 +1026,103 @@ body {
  * 		--- CONTENT PAGE
  * =============================
  */
-/* line 101, sass/_NG-main.scss */
+/* line 136, sass/_NG-main.scss */
 #presentation_content {
   background-color: #282B2E;
 }
-/* line 103, sass/_NG-main.scss */
+/* line 138, sass/_NG-main.scss */
 #presentation_content code {
   font-size: 1.2em;
 }
 
-/* line 106, sass/_NG-main.scss */
-.push-right {
-  position: relative;
-  right: 0px;
-  bottom: 0px;
+/* line 142, sass/_NG-main.scss */
+#projects_content p span.projects-intro {
+  color: #FFFFFF;
+}
+/* line 143, sass/_NG-main.scss */
+#projects_content .item p {
+  font-size: 1.2em;
+  line-height: 300%;
+}
+/* line 145, sass/_NG-main.scss */
+#projects_content .project-one {
+  background-color: #1f69e4;
+}
+/* line 146, sass/_NG-main.scss */
+#projects_content .project-two {
+  background-color: #01A4A4;
+}
+/* line 147, sass/_NG-main.scss */
+#projects_content .project-three {
+  background-color: #00A1CB;
+}
+/* line 148, sass/_NG-main.scss */
+#projects_content .project-four {
+  background-color: #61AE24;
+}
+/* line 149, sass/_NG-main.scss */
+#projects_content .project-five {
+  background-color: #F5B042;
+}
+/* line 150, sass/_NG-main.scss */
+#projects_content .project-six {
+  background-color: #eb6855;
+}
+/* line 151, sass/_NG-main.scss */
+#projects_content .project-seven {
+  background-color: #616161;
 }
 
-/* line 112, sass/_NG-main.scss */
-.btn_back_home {
-  border: 0;
+/* line 154, sass/_NG-main.scss */
+#skills_content {
+  overflow-y: scroll;
+  height: 500px;
+  background-color: #9A59B5;
+  padding: 10px;
   color: #FFFFFF;
-  font-size: 20px;
-  background: #BEC3C7;
-  padding: 10px 20px 10px 20px;
 }
-/* line 118, sass/_NG-main.scss */
-.btn_back_home:hover {
-  background: #95A5A5;
+/* line 161, sass/_NG-main.scss */
+#skills_content p span.skills_title_skill {
+  font-size: 1.5em;
+  color: #F1C40F;
+  margin-top: 20px;
+}
+/* line 167, sass/_NG-main.scss */
+#skills_content i.fa {
+  vertical-align: middle;
+  padding-right: 15px;
+}
+
+/* line 174, sass/_NG-main.scss */
+#tutorials_content {
+  height: 400px;
+  line-height: 400px;
+  background-color: #EB6F63;
+  text-align: center;
+}
+/* line 179, sass/_NG-main.scss */
+#tutorials_content p {
+  font-size: 1.5em;
+  color: #FFFFFF;
+}
+
+/* line 185, sass/_NG-main.scss */
+#contact_content {
+  background-color: #5CABE3;
+  color: #FFFFFF;
+  height: 450px;
+}
+/* line 189, sass/_NG-main.scss */
+#contact_content iframe {
+  width: 100%;
+}
+/* line 190, sass/_NG-main.scss */
+#contact_content p span.contact_contact_title {
+  font-size: 1.5em;
+}
+/* line 193, sass/_NG-main.scss */
+#contact_content .contact_contact_way {
+  margin-bottom: 50px;
 }
 
 /* ---------------------------------- */

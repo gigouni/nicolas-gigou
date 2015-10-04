@@ -5,6 +5,18 @@
  * @protected : Please contact the author to use/edit the following lines at nicolas.gigou [at] gmail.com
  */
 
+
+function rgbToHex(R,G,B) {
+	return toHex(R)+toHex(G)+toHex(B);
+}
+function toHex(n) {
+	n = parseInt(n,10);
+	if (isNaN(n)) return "00";
+	n = Math.max(0,Math.min(n,255));
+	return "0123456789ABCDEF".charAt((n-n%16)/16)
+		+ "0123456789ABCDEF".charAt(n%16);
+}
+
 $(document).ready(function() 
 {
 	/**
@@ -88,6 +100,30 @@ $(document).ready(function()
 
 	});
 
+	/**
+	 * ====================================================
+	 * ON CLICK ON ITEM PROJECT
+	 * REDIRECTION INTO THE SITE OR THE FOLDER IN A NEW TAB
+	 * ====================================================
+	 */
+	
+	// The div of project item
+	var project_tymai 			= $(".item.tymai");
+	var project_anglais 		= $(".item.anglais");
+	var project_lambeconduite 	= $(".item.lambeconduite");
+	var project_rems 			= $(".item.rems");
+	var project_khenchaf 		= $(".item.khenchaf");
+	var project_nicolasgigou 	= $(".item.nicolasgigou");
+	var project_mkda 			= $(".item.mkda");
+
+	project_tymai.click( function(){ redirectToProject("tymai") });
+	project_anglais.click( function(){ redirectToProject("anglais") });
+	project_lambeconduite.click( function(){ redirectToProject("lambeconduite") });
+	project_rems.click( function(){ redirectToProject("rems") });
+	project_khenchaf.click( function(){ redirectToProject("khenchaf") });
+	project_nicolasgigou.click( function(){ redirectToProject("nicolasgigou") });
+	project_mkda.click( function(){ alert("Aucune page disponible pour l'instant. Veuillez revenir ultérieurement.") });
+
 });
 
 
@@ -109,11 +145,27 @@ function goBackHome(p)
 
 	// Toggle (hide with animation) the current panel
 	if( p == "presentation" )	{ presentation_content.toggle(400); }
-	if( p == "projects" )		{ projects_content.toggle(400); }
-	if( p == "skills" )			{ skills_content.toggle(400); }
-	if( p == "tutorials" )		{ tutorials_content.toggle(400); }
-	if( p == "contact" )		{ contact_content.toggle(400); }
+	else if( p == "projects" )		{ projects_content.toggle(400); }
+	else if( p == "skills" )		{ skills_content.toggle(400); }
+	else if( p == "tutorials" )		{ tutorials_content.toggle(400); }
+	else if( p == "contact" )		{ contact_content.toggle(400); }
 
 	// Toggle (show) the home panel in all cases
 	home_div.toggle(400);
+}
+
+/**
+ * =================================================
+ * CUSTOM FUNCTION
+ * REDIRECT USERS INTO THE HOME PAGE OF EACH PROJECT
+ * =================================================
+ */
+function redirectToProject(project)
+{
+	if( project == "tymai" ){ window.open("http://www.creperietymai.fr/"); }
+	if( project == "anglais" ){ window.open("http://nicolas-gigou.fr/wp-content/uploads/2014/08/site_anglais/home.html"); }
+	if( project == "lambeconduite" ){ window.open("http://lambeconduite.com/"); }
+	if( project == "rems" ){ window.open("https://rems.ensta-bretagne.fr/"); }
+	if( project == "khenchaf" ){ window.open("http://www.ensta-bretagne.fr/khenchaf/"); }
+	if( project == "nicolasgigou" ){ goBackHome("projects"); }
 }
