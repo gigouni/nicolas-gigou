@@ -5,18 +5,6 @@
  * @protected : Please contact the author to use/edit the following lines at nicolas.gigou [at] gmail.com
  */
 
-
-function rgbToHex(R,G,B) {
-	return toHex(R)+toHex(G)+toHex(B);
-}
-function toHex(n) {
-	n = parseInt(n,10);
-	if (isNaN(n)) return "00";
-	n = Math.max(0,Math.min(n,255));
-	return "0123456789ABCDEF".charAt((n-n%16)/16)
-		+ "0123456789ABCDEF".charAt(n%16);
-}
-
 $(document).ready(function() 
 {
 	/**
@@ -34,6 +22,7 @@ $(document).ready(function()
 	var home_skills_div 		= $("#home_content .skills");
 	var home_tutorials_div 		= $("#home_content .tutorials");
 	var home_contact_div 		= $("#home_content .contact");
+	var home_legalNotice_div 	= $("#home_content .legalNotice");
 
 	// The div which contains the content of pages
 	var presentation_content = $("#presentation_content");
@@ -41,6 +30,7 @@ $(document).ready(function()
 	var skills_content = $("#skills_content");
 	var tutorials_content = $("#tutorials_content");
 	var contact_content = $("#contact_content");
+	var legalNotice_content = $("#legalNotice_content");
 
 	/**
 	 * =================================
@@ -54,6 +44,7 @@ $(document).ready(function()
 	skills_content.hide();
 	tutorials_content.hide();
 	contact_content.hide();
+	legalNotice_content.hide();
 
 	// When the user click on the presentation item
 	// To click on this, we are on the home page, no alternatives
@@ -100,6 +91,30 @@ $(document).ready(function()
 
 	});
 
+	// When the user click on the legal notice link
+	$("#legalNotice_link_legalNotice").click( function() 
+	{
+		// Hide all panels and show the home one
+		hideAllPanels();
+		home_div.toggle(400);
+
+		// Show the legal notice panel
+		legalNotice_content.toggle(400);
+
+	});
+
+	// When the user click on the legal notice link
+	$("#legalNotice_link_contact").click( function() 
+	{
+		// Hide all panels and show the home one
+		hideAllPanels();
+		home_div.toggle(400);
+
+		// Show the legal notice panel
+		contact_content.toggle(400);
+
+	});
+
 	/**
 	 * ====================================================
 	 * ON CLICK ON ITEM PROJECT
@@ -142,6 +157,7 @@ function goBackHome(p)
 	var skills_content = $("#skills_content");
 	var tutorials_content = $("#tutorials_content");
 	var contact_content = $("#contact_content");
+	var legalNotice_content = $("#legalNotice_content");
 
 	// Toggle (hide with animation) the current panel
 	if( p == "presentation" )	{ presentation_content.toggle(400); }
@@ -149,6 +165,7 @@ function goBackHome(p)
 	else if( p == "skills" )		{ skills_content.toggle(400); }
 	else if( p == "tutorials" )		{ tutorials_content.toggle(400); }
 	else if( p == "contact" )		{ contact_content.toggle(400); }
+	else if( p == "legalNotice" )	{ legalNotice_content.toggle(400); }
 
 	// Toggle (show) the home panel in all cases
 	home_div.toggle(400);
@@ -168,4 +185,34 @@ function redirectToProject(project)
 	if( project == "rems" ){ window.open("https://rems.ensta-bretagne.fr/"); }
 	if( project == "khenchaf" ){ window.open("http://www.ensta-bretagne.fr/khenchaf/"); }
 	if( project == "nicolasgigou" ){ goBackHome("projects"); }
+}
+
+/**
+ * ==============================================================
+ * CUSTOM FUNCTION
+ * HIDE THE PANEL IN CASE WE NEED IT .. YOU KNOW ... JUST IN CASE
+ * ==============================================================
+ */
+function hideAllPanels()
+{
+	// The div which contains the content of pages
+	var home_div = $("#home_content");
+	var presentation_content = $("#presentation_content");
+	var projects_content = $("#projects_content");
+	var skills_content = $("#skills_content");
+	var tutorials_content = $("#tutorials_content");
+	var contact_content = $("#contact_content");
+	var legalNotice_content = $("#legalNotice_content");
+
+	// Check if we aren't on the home panel
+	// Hide all the panels
+	if( presentation_content.css("display") == "block" ){ presentation_content.hide(); }
+	if( projects_content.css("display") == "block" ){ projects_content.hide(); }
+	if( skills_content.css("display") == "block" ){ skills_content.hide(); }
+	if( tutorials_content.css("display") == "block" ){ tutorials_content.hide(); }
+	if( contact_content.css("display") == "block" ){ contact_content.hide(); }
+	if( legalNotice_content.css("display") == "block" ){ legalNotice_content.hide(); }
+
+	// Show the home panel to be sure we are in
+	home_div.show();
 }

@@ -846,10 +846,9 @@ Tags: none
 /* ---------------------------------- */
 /* line 5, sass/_NG-header.scss */
 #header {
-  position: absolute;
-  top: 20px;
   right: 0;
   left: 0;
+  height: 150px;
 }
 /* line 9, sass/_NG-header.scss */
 #header p {
@@ -857,16 +856,21 @@ Tags: none
   color: #FFFFFF;
   font-size: 1.3em;
 }
+/* line 13, sass/_NG-header.scss */
+#header p.header_title {
+  padding-top: 20px;
+}
 
 /* ---------------------------------- */
 /* ==main                           */
 /* ---------------------------------- */
 /**
- * ============================================================================================
+ * ====================================================================================================
  * CUSTOM FLAT COLORS
  * Src : http://siecledigital.fr/wp-content/uploads/2015/05/couleurs-flat.jpg
  * Src : http://www.colourlovers.com/digital-art/trends/branding/7880/Papeterie_Haute-Ville_Logo
- * =============================================================================================
+ * Src : http://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html
+ * ====================================================================================================
  */
 /**
  * =============================
@@ -885,22 +889,36 @@ Tags: none
  * 		--- GLOBAL
  * =============================
  */
-/* line 67, sass/_NG-main.scss */
+/* line 73, sass/_NG-main.scss */
+html {
+  height: 100%;
+}
+
+/* line 74, sass/_NG-main.scss */
 body {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
   background-color: #597d9d;
   font-family: Ubuntu, Helvetica, sans-serif;
 }
 
-/* line 75, sass/_NG-main.scss */
+/* line 83, sass/_NG-main.scss */
+#main {
+  margin-bottom: 200px;
+}
+
+/* line 84, sass/_NG-main.scss */
+footer {
+  position: absolute;
+  bottom: 70px;
+  left: 0;
+  right: 0;
+}
+
+/* line 86, sass/_NG-main.scss */
 .item-container {
-  margin-top: 15%;
-  margin-bottom: 100px;
-  position: relative;
   width: 90%;
   margin-right: auto;
   margin-left: auto;
@@ -912,69 +930,69 @@ body {
  * 		--- HOME PAGE
  * =============================
  */
-/* line 91, sass/_NG-main.scss */
+/* line 99, sass/_NG-main.scss */
 .line-space-bottom {
   margin-bottom: 15px;
 }
 
-/* line 93, sass/_NG-main.scss */
+/* line 101, sass/_NG-main.scss */
 .item {
   line-height: 140px;
   cursor: pointer;
 }
-/* line 96, sass/_NG-main.scss */
+/* line 104, sass/_NG-main.scss */
 .item p {
   text-align: center;
   font-size: 2em;
   color: #FFFFFF;
 }
-/* line 102, sass/_NG-main.scss */
+/* line 110, sass/_NG-main.scss */
 .item.welcome {
   background-color: #7E8C8D;
   cursor: default;
 }
-/* line 103, sass/_NG-main.scss */
+/* line 111, sass/_NG-main.scss */
 .item.presentation {
   background-color: #2DCC70;
 }
-/* line 103, sass/_NG-main.scss */
+/* line 111, sass/_NG-main.scss */
 .item.presentation:hover {
   background-color: #27AE61;
 }
-/* line 104, sass/_NG-main.scss */
+/* line 112, sass/_NG-main.scss */
 .item.projects {
   background-color: #F5B042;
 }
-/* line 104, sass/_NG-main.scss */
+/* line 112, sass/_NG-main.scss */
 .item.projects:hover {
   background-color: #F39C11;
 }
-/* line 105, sass/_NG-main.scss */
+/* line 113, sass/_NG-main.scss */
 .item.skills {
   background-color: #9A59B5;
 }
-/* line 105, sass/_NG-main.scss */
+/* line 113, sass/_NG-main.scss */
 .item.skills:hover {
   background-color: #8D44AF;
 }
-/* line 106, sass/_NG-main.scss */
+/* line 114, sass/_NG-main.scss */
 .item.tutorials {
   background-color: #EB6F63;
 }
-/* line 106, sass/_NG-main.scss */
+/* line 114, sass/_NG-main.scss */
 .item.tutorials:hover {
   background-color: #C1392B;
 }
-/* line 107, sass/_NG-main.scss */
+/* line 115, sass/_NG-main.scss */
 .item.contact {
   background-color: #5CABE3;
 }
-/* line 107, sass/_NG-main.scss */
+/* line 115, sass/_NG-main.scss */
 .item.contact:hover {
   background-color: #297FB8;
 }
 
-/* line 110, sass/_NG-main.scss */
+/* line 119, sass/_NG-main.scss */
 .btn_back_home {
   border: 0;
   color: #FFFFFF;
@@ -982,12 +1000,12 @@ body {
   padding: 10px 20px;
   float: right;
 }
-/* line 116, sass/_NG-main.scss */
+/* line 125, sass/_NG-main.scss */
 .btn_back_home:hover {
   background: #95A5A5;
 }
 
-/* line 124, sass/_NG-main.scss */
+/* line 130, sass/_NG-main.scss */
 .grid-custom-5col {
   text-align: center;
 }
@@ -1026,54 +1044,54 @@ body {
  * 		--- CONTENT PAGE
  * =============================
  */
-/* line 136, sass/_NG-main.scss */
+/* line 142, sass/_NG-main.scss */
 #presentation_content {
   background-color: #282B2E;
 }
-/* line 138, sass/_NG-main.scss */
+/* line 144, sass/_NG-main.scss */
 #presentation_content code {
   font-size: 1.2em;
 }
 
-/* line 142, sass/_NG-main.scss */
+/* line 148, sass/_NG-main.scss */
 #projects_content p span.projects-intro {
   color: #FFFFFF;
 }
-/* line 143, sass/_NG-main.scss */
+/* line 149, sass/_NG-main.scss */
 #projects_content .item p {
   font-size: 1.2em;
   line-height: 300%;
 }
-/* line 145, sass/_NG-main.scss */
+/* line 151, sass/_NG-main.scss */
 #projects_content .project-one {
   background-color: #1f69e4;
 }
-/* line 146, sass/_NG-main.scss */
+/* line 152, sass/_NG-main.scss */
 #projects_content .project-two {
   background-color: #01A4A4;
 }
-/* line 147, sass/_NG-main.scss */
+/* line 153, sass/_NG-main.scss */
 #projects_content .project-three {
   background-color: #00A1CB;
 }
-/* line 148, sass/_NG-main.scss */
+/* line 154, sass/_NG-main.scss */
 #projects_content .project-four {
   background-color: #61AE24;
 }
-/* line 149, sass/_NG-main.scss */
+/* line 155, sass/_NG-main.scss */
 #projects_content .project-five {
   background-color: #F5B042;
 }
-/* line 150, sass/_NG-main.scss */
+/* line 156, sass/_NG-main.scss */
 #projects_content .project-six {
   background-color: #eb6855;
 }
-/* line 151, sass/_NG-main.scss */
+/* line 157, sass/_NG-main.scss */
 #projects_content .project-seven {
   background-color: #616161;
 }
 
-/* line 154, sass/_NG-main.scss */
+/* line 160, sass/_NG-main.scss */
 #skills_content {
   overflow-y: scroll;
   height: 500px;
@@ -1081,48 +1099,83 @@ body {
   padding: 10px;
   color: #FFFFFF;
 }
-/* line 161, sass/_NG-main.scss */
+/* line 167, sass/_NG-main.scss */
+#skills_content .skills_container {
+  padding-left: 2em;
+}
+/* line 169, sass/_NG-main.scss */
 #skills_content p span.skills_title_skill {
   font-size: 1.5em;
   color: #F1C40F;
-  margin-top: 20px;
-}
-/* line 167, sass/_NG-main.scss */
-#skills_content i.fa {
-  vertical-align: middle;
-  padding-right: 15px;
+  margin-top: 50px;
 }
 
-/* line 174, sass/_NG-main.scss */
+/* line 176, sass/_NG-main.scss */
 #tutorials_content {
   height: 400px;
   line-height: 400px;
   background-color: #EB6F63;
   text-align: center;
 }
-/* line 179, sass/_NG-main.scss */
+/* line 181, sass/_NG-main.scss */
 #tutorials_content p {
   font-size: 1.5em;
   color: #FFFFFF;
 }
 
-/* line 185, sass/_NG-main.scss */
+/* line 187, sass/_NG-main.scss */
 #contact_content {
   background-color: #5CABE3;
   color: #FFFFFF;
   height: 450px;
 }
-/* line 189, sass/_NG-main.scss */
+/* line 191, sass/_NG-main.scss */
 #contact_content iframe {
   width: 100%;
 }
-/* line 190, sass/_NG-main.scss */
+/* line 192, sass/_NG-main.scss */
 #contact_content p span.contact_contact_title {
   font-size: 1.5em;
 }
-/* line 193, sass/_NG-main.scss */
+/* line 195, sass/_NG-main.scss */
 #contact_content .contact_contact_way {
   margin-bottom: 50px;
+}
+
+/* line 198, sass/_NG-main.scss */
+#legalNotice_content {
+  padding: 15px;
+  background-color: #9F8D7A;
+  overflow-y: scroll;
+  height: 450px;
+  color: #FFFFFF;
+  font-size: 1.2em;
+}
+/* line 205, sass/_NG-main.scss */
+#legalNotice_content .legalNotice_header {
+  width: 100%;
+}
+/* line 206, sass/_NG-main.scss */
+#legalNotice_content p.legalNotice_title {
+  text-align: center;
+  font-size: 2em;
+}
+/* line 207, sass/_NG-main.scss */
+#legalNotice_content h2, #legalNotice_content h3 {
+  font-variant: small-caps;
+}
+/* line 208, sass/_NG-main.scss */
+#legalNotice_content a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* line 211, sass/_NG-main.scss */
+#legalNotice_content a:hover {
+  cursor: pointer;
+}
+/* line 212, sass/_NG-main.scss */
+#legalNotice_content a:visited {
+  color: inherit;
 }
 
 /* ---------------------------------- */
@@ -1132,16 +1185,21 @@ body {
 /* ==footer                           */
 /* ---------------------------------- */
 /* line 5, sass/_NG-footer.scss */
-.footer-container {
-  position: absolute;
-  bottom: 10px;
-  right: 0;
-  left: 0;
-}
-
-/* line 12, sass/_NG-footer.scss */
 .footer-container p {
   color: #FFFFFF;
   text-align: center;
-  line-height: 30%;
+  margin-bottom: 0;
+}
+/* line 9, sass/_NG-footer.scss */
+.footer-container p a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* line 12, sass/_NG-footer.scss */
+.footer-container p a:hover {
+  cursor: pointer;
+}
+/* line 13, sass/_NG-footer.scss */
+.footer-container p a:visited {
+  color: #FFFFFF;
 }

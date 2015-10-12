@@ -4,11 +4,12 @@
 
 
 /**
- * ============================================================================================
+ * ====================================================================================================
  * CUSTOM FLAT COLORS
  * Src : http://siecledigital.fr/wp-content/uploads/2015/05/couleurs-flat.jpg
  * Src : http://www.colourlovers.com/digital-art/trends/branding/7880/Papeterie_Haute-Ville_Logo
- * =============================================================================================
+ * Src : http://www.awwwards.com/trendy-web-color-palettes-and-material-design-color-schemes-tools.html
+ * ====================================================================================================
  */
 
 // Part 1
@@ -46,6 +47,11 @@ $darkPink:		#D70060;
 $lightRed:		#E54028;
 $grey: 			#616161;
 
+// Part 3
+$lightBrown: 	#DAAD86;
+$paleBlue:		#98DAFC;
+$darkDarkBrown:	#312C32;
+
 /**
  * =============================
  * CUSTOM FONTS
@@ -64,18 +70,20 @@ $grey: 			#616161;
  * 		--- GLOBAL
  * =============================
  */
+html { height: 100%; }
 body {
-	position: absolute;
-	top: 0; bottom: 0;
-	right: 0; left: 0;
+	position: relative;
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
 	background-color: lighten($wetAsphalt,20%);
 	font-family: Ubuntu, Helvetica, sans-serif;
 }
 
+#main { margin-bottom: 200px; }
+footer {position: absolute; bottom: 70px; left: 0; right: 0}
+
 .item-container {
-	margin-top: 15%;
-	margin-bottom: 100px;
-	position: relative;
 	width: 90%;
 	margin-right: auto;
 	margin-left: auto;
@@ -107,6 +115,7 @@ body {
 	&.contact { background-color: $peterRiver; &:hover { background-color: $belizeHole; }}
 }
 
+
 .btn_back_home {
 	border: 0;
 	color: $white;
@@ -116,9 +125,6 @@ body {
 	&:hover {
 		background: $concrete;	
 	}
-}
-
-.push-right { 
 }
 
 .grid-custom-5col { 
@@ -158,17 +164,13 @@ body {
 	padding: 10px;
 	color: $white;
 
+	& .skills_container { padding-left: 2em; }
+
 	& p span.skills_title_skill {
 		font-size: 1.5em;
 		color: $sunFlower;
-		margin-top: 20px;
+		margin-top: 50px;
 	}
-
-	& i.fa {
-		vertical-align: middle;
-		padding-right: 15px;
-	}
-
 }
 
 #tutorials_content {
@@ -191,4 +193,22 @@ body {
 		font-size: 1.5em;
 	}
 	& .contact_contact_way { margin-bottom: 50px; }
+}
+
+#legalNotice_content {
+	padding: 15px;
+	background-color: #9F8D7A;
+	overflow-y: scroll;
+	height: 450px;
+	color: $white;
+	font-size: 1.2em;
+	.legalNotice_header { width: 100%; }
+	p.legalNotice_title { text-align: center; font-size: 2em; }
+	h2, h3 { font-variant: small-caps; }
+	a { 
+		text-decoration: none;
+		color: $white;
+		&:hover { cursor: pointer; }
+		&:visited { color: inherit; }
+	}
 }

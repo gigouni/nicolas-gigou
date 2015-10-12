@@ -3,12 +3,13 @@
 /* ---------------------------------- */
 
 #header {
-	position: absolute;
-	top: 20px; right: 0; left: 0;
+	right: 0; left: 0;
+	height: 150px;
 
 	& p {  	
 		text-align: center;
 		color: #FFFFFF;
 		font-size: 1.3em;
+		&.header_title { padding-top: 20px; }
 	}
 }
