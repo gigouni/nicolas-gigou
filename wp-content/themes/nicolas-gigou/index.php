@@ -12,7 +12,7 @@
 
 get_header(); ?>
 
-<div id="main" role="main" class="mw1640p center">
+<div id="main" role="main">
 
 	<!-- Content of the page -->
 	<div class="item-container">

@@ -70,24 +70,13 @@ $darkDarkBrown:	#312C32;
  * 		--- GLOBAL
  * =============================
  */
-html { height: 100%; }
 body {
-	position: relative;
-	min-height: 100%;
-	margin: 0;
-	padding: 0;
 	background-color: lighten($wetAsphalt,20%);
 	font-family: Ubuntu, Helvetica, sans-serif;
 }
 
-#main { margin-bottom: 200px; }
-footer {position: absolute; bottom: 70px; left: 0; right: 0}
-
-.item-container {
-	width: 90%;
-	margin-right: auto;
-	margin-left: auto;
-}
+/* For IE usage */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
 
 /**
  * =============================
@@ -95,6 +84,13 @@ footer {position: absolute; bottom: 70px; left: 0; right: 0}
  * 		--- HOME PAGE
  * =============================
  */
+
+.item-container {
+	margin-top: 100px;
+	width: 90%;
+	margin-right: auto;
+	margin-left: auto;
+}
 
 .line-space-bottom { margin-bottom: 15px; }
 
@@ -115,6 +111,8 @@ footer {position: absolute; bottom: 70px; left: 0; right: 0}
 	&.contact { background-color: $peterRiver; &:hover { background-color: $belizeHole; }}
 }
 
+/* Prod margin fix */
+.item.presentation { margin-left: 15px; }
 
 .btn_back_home {
 	border: 0;
@@ -139,6 +137,8 @@ footer {position: absolute; bottom: 70px; left: 0; right: 0}
  * 		--- CONTENT PAGE
  * =============================
  */
+#header p { cursor: pointer; }
+
 #presentation_content {
 	background-color: #282B2E;
 	& code { font-size: 1.2em; }
@@ -148,8 +148,8 @@ footer {position: absolute; bottom: 70px; left: 0; right: 0}
 	& p span.projects-intro { color: $white; }
 	& .item p { font-size: 1.2em; line-height: 300%; }
 
-	& .project-one { background-color: lighten($darkBlue, 20%); }
-	& .project-two { background-color: $blueGreen; }
+	& .project-one { background-color: $blueGreen; }
+	& .project-two { background-color: $wisteria; }
 	& .project-three { background-color: $blue; }
 	& .project-four { background-color: $green; }
 	& .project-five { background-color: $lightOrange; }
@@ -192,7 +192,10 @@ footer {position: absolute; bottom: 70px; left: 0; right: 0}
 	& p span.contact_contact_title {
 		font-size: 1.5em;
 	}
-	& .contact_contact_way { margin-bottom: 50px; }
+	& .contact_contact_way {
+		margin-bottom: 7%; 
+		&.legalNotice a { text-decoration: none; color: $white; }
+	}
 }
 
 #legalNotice_content {

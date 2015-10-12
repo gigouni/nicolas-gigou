@@ -92,7 +92,7 @@ $(document).ready(function()
 	});
 
 	// When the user click on the legal notice link
-	$("#legalNotice_link_legalNotice").click( function() 
+	$("#legalNotice_link").click( function() 
 	{
 		// Hide all panels and show the home one
 		hideAllPanels();
@@ -103,16 +103,15 @@ $(document).ready(function()
 
 	});
 
-	// When the user click on the legal notice link
-	$("#legalNotice_link_contact").click( function() 
+	/**
+	 * =============================
+	 * ON CLICK ON HEADER
+	 * REDIRECTION TO THE HOME PANEL
+	 * =============================
+	 */
+	$("#header p").click(function()
 	{
-		// Hide all panels and show the home one
 		hideAllPanels();
-		home_div.toggle(400);
-
-		// Show the legal notice panel
-		contact_content.toggle(400);
-
 	});
 
 	/**
@@ -207,11 +206,11 @@ function hideAllPanels()
 	// Check if we aren't on the home panel
 	// Hide all the panels
 	if( presentation_content.css("display") == "block" ){ presentation_content.hide(); }
-	if( projects_content.css("display") == "block" ){ projects_content.hide(); }
-	if( skills_content.css("display") == "block" ){ skills_content.hide(); }
-	if( tutorials_content.css("display") == "block" ){ tutorials_content.hide(); }
-	if( contact_content.css("display") == "block" ){ contact_content.hide(); }
-	if( legalNotice_content.css("display") == "block" ){ legalNotice_content.hide(); }
+	else if( projects_content.css("display") == "block" ){ projects_content.hide(); }
+	else if( skills_content.css("display") == "block" ){ skills_content.hide(); }
+	else if( tutorials_content.css("display") == "block" ){ tutorials_content.hide(); }
+	else if( contact_content.css("display") == "block" ){ contact_content.hide(); }
+	else if( legalNotice_content.css("display") == "block" ){ legalNotice_content.hide(); }
 
 	// Show the home panel to be sure we are in
 	home_div.show();

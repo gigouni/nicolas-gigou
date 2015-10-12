@@ -848,15 +848,14 @@ Tags: none
 #header {
   right: 0;
   left: 0;
-  height: 150px;
 }
-/* line 9, sass/_NG-header.scss */
+/* line 8, sass/_NG-header.scss */
 #header p {
   text-align: center;
   color: #FFFFFF;
   font-size: 1.3em;
 }
-/* line 13, sass/_NG-header.scss */
+/* line 12, sass/_NG-header.scss */
 #header p.header_title {
   padding-top: 20px;
 }
@@ -890,38 +889,15 @@ Tags: none
  * =============================
  */
 /* line 73, sass/_NG-main.scss */
-html {
-  height: 100%;
-}
-
-/* line 74, sass/_NG-main.scss */
 body {
-  position: relative;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
   background-color: #597d9d;
   font-family: Ubuntu, Helvetica, sans-serif;
 }
 
-/* line 83, sass/_NG-main.scss */
-#main {
-  margin-bottom: 200px;
-}
-
-/* line 84, sass/_NG-main.scss */
-footer {
-  position: absolute;
-  bottom: 70px;
-  left: 0;
-  right: 0;
-}
-
-/* line 86, sass/_NG-main.scss */
-.item-container {
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
+/* For IE usage */
+/* line 79, sass/_NG-main.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
 }
 
 /**
@@ -930,69 +906,83 @@ footer {
  * 		--- HOME PAGE
  * =============================
  */
-/* line 99, sass/_NG-main.scss */
+/* line 88, sass/_NG-main.scss */
+.item-container {
+  margin-top: 100px;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* line 95, sass/_NG-main.scss */
 .line-space-bottom {
   margin-bottom: 15px;
 }
 
-/* line 101, sass/_NG-main.scss */
+/* line 97, sass/_NG-main.scss */
 .item {
   line-height: 140px;
   cursor: pointer;
 }
-/* line 104, sass/_NG-main.scss */
+/* line 100, sass/_NG-main.scss */
 .item p {
   text-align: center;
   font-size: 2em;
   color: #FFFFFF;
 }
-/* line 110, sass/_NG-main.scss */
+/* line 106, sass/_NG-main.scss */
 .item.welcome {
   background-color: #7E8C8D;
   cursor: default;
 }
-/* line 111, sass/_NG-main.scss */
+/* line 107, sass/_NG-main.scss */
 .item.presentation {
   background-color: #2DCC70;
 }
-/* line 111, sass/_NG-main.scss */
+/* line 107, sass/_NG-main.scss */
 .item.presentation:hover {
   background-color: #27AE61;
 }
-/* line 112, sass/_NG-main.scss */
+/* line 108, sass/_NG-main.scss */
 .item.projects {
   background-color: #F5B042;
 }
-/* line 112, sass/_NG-main.scss */
+/* line 108, sass/_NG-main.scss */
 .item.projects:hover {
   background-color: #F39C11;
 }
-/* line 113, sass/_NG-main.scss */
+/* line 109, sass/_NG-main.scss */
 .item.skills {
   background-color: #9A59B5;
 }
-/* line 113, sass/_NG-main.scss */
+/* line 109, sass/_NG-main.scss */
 .item.skills:hover {
   background-color: #8D44AF;
 }
-/* line 114, sass/_NG-main.scss */
+/* line 110, sass/_NG-main.scss */
 .item.tutorials {
   background-color: #EB6F63;
 }
-/* line 114, sass/_NG-main.scss */
+/* line 110, sass/_NG-main.scss */
 .item.tutorials:hover {
   background-color: #C1392B;
 }
-/* line 115, sass/_NG-main.scss */
+/* line 111, sass/_NG-main.scss */
 .item.contact {
   background-color: #5CABE3;
 }
-/* line 115, sass/_NG-main.scss */
+/* line 111, sass/_NG-main.scss */
 .item.contact:hover {
   background-color: #297FB8;
 }
 
-/* line 119, sass/_NG-main.scss */
+/* Prod margin fix */
+/* line 115, sass/_NG-main.scss */
+.item.presentation {
+  margin-left: 15px;
+}
+
+/* line 117, sass/_NG-main.scss */
 .btn_back_home {
   border: 0;
   color: #FFFFFF;
@@ -1000,12 +990,12 @@ footer {
   padding: 10px 20px;
   float: right;
 }
-/* line 125, sass/_NG-main.scss */
+/* line 123, sass/_NG-main.scss */
 .btn_back_home:hover {
   background: #95A5A5;
 }
 
-/* line 130, sass/_NG-main.scss */
+/* line 128, sass/_NG-main.scss */
 .grid-custom-5col {
   text-align: center;
 }
@@ -1044,6 +1034,11 @@ footer {
  * 		--- CONTENT PAGE
  * =============================
  */
+/* line 140, sass/_NG-main.scss */
+#header p {
+  cursor: pointer;
+}
+
 /* line 142, sass/_NG-main.scss */
 #presentation_content {
   background-color: #282B2E;
@@ -1064,11 +1059,11 @@ footer {
 }
 /* line 151, sass/_NG-main.scss */
 #projects_content .project-one {
-  background-color: #1f69e4;
+  background-color: #01A4A4;
 }
 /* line 152, sass/_NG-main.scss */
 #projects_content .project-two {
-  background-color: #01A4A4;
+  background-color: #8D44AF;
 }
 /* line 153, sass/_NG-main.scss */
 #projects_content .project-three {
@@ -1139,10 +1134,15 @@ footer {
 }
 /* line 195, sass/_NG-main.scss */
 #contact_content .contact_contact_way {
-  margin-bottom: 50px;
+  margin-bottom: 7%;
+}
+/* line 197, sass/_NG-main.scss */
+#contact_content .contact_contact_way.legalNotice a {
+  text-decoration: none;
+  color: #FFFFFF;
 }
 
-/* line 198, sass/_NG-main.scss */
+/* line 201, sass/_NG-main.scss */
 #legalNotice_content {
   padding: 15px;
   background-color: #9F8D7A;
@@ -1151,29 +1151,29 @@ footer {
   color: #FFFFFF;
   font-size: 1.2em;
 }
-/* line 205, sass/_NG-main.scss */
+/* line 208, sass/_NG-main.scss */
 #legalNotice_content .legalNotice_header {
   width: 100%;
 }
-/* line 206, sass/_NG-main.scss */
+/* line 209, sass/_NG-main.scss */
 #legalNotice_content p.legalNotice_title {
   text-align: center;
   font-size: 2em;
 }
-/* line 207, sass/_NG-main.scss */
+/* line 210, sass/_NG-main.scss */
 #legalNotice_content h2, #legalNotice_content h3 {
   font-variant: small-caps;
 }
-/* line 208, sass/_NG-main.scss */
+/* line 211, sass/_NG-main.scss */
 #legalNotice_content a {
   text-decoration: none;
   color: #FFFFFF;
 }
-/* line 211, sass/_NG-main.scss */
+/* line 214, sass/_NG-main.scss */
 #legalNotice_content a:hover {
   cursor: pointer;
 }
-/* line 212, sass/_NG-main.scss */
+/* line 215, sass/_NG-main.scss */
 #legalNotice_content a:visited {
   color: inherit;
 }
@@ -1184,22 +1184,3 @@ footer {
 /* ---------------------------------- */
 /* ==footer                           */
 /* ---------------------------------- */
-/* line 5, sass/_NG-footer.scss */
-.footer-container p {
-  color: #FFFFFF;
-  text-align: center;
-  margin-bottom: 0;
-}
-/* line 9, sass/_NG-footer.scss */
-.footer-container p a {
-  text-decoration: none;
-  color: #FFFFFF;
-}
-/* line 12, sass/_NG-footer.scss */
-.footer-container p a:hover {
-  cursor: pointer;
-}
-/* line 13, sass/_NG-footer.scss */
-.footer-container p a:visited {
-  color: #FFFFFF;
-}
