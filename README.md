@@ -12,7 +12,7 @@ Flat design, using JQuery and "Single Page Application"-based.
 
 * V2
 
-Flat design, using HTML5, AngularJS ("Single Page Application"-based).
+Flat design, using HTML5.
 
 Date de développement : Fin septembre 2016
 
