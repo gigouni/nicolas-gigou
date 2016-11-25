@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>PokéWatt - Le pokédex qui vous met au courant !</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+</head>
+<body ng-app="pokedex">
+
+    <!-- To wrap the pokedex (two different templates) with the same controller -->
+    <div id="wrapper" ng-controller="SearchCtrl">
+
+        <!-- Insert navbar -->
+        <div navbar></div>
+
+        <!-- Pokedex -->
+        <!-- ------- -->
+        <div class="container jumbotron">
+
+            <!-- Search -->
+            <div class="wrapper-search">
+
+                <!-- ID input -->
+                <!-- -------- -->
+                <div class="row">
+                    <form>
+                        <div class="form-group col-xs-4 col-xs-offset-4">
+                            <label for="id"><p>Identifiant du pokémon</p></label>
+                            <input  name="id" class="form-control" id="id" placeholder="ID du pokémon" ng-load="deleteThisString()">
+                        </div>
+
+                        <div class="form-group col-xs-4 col-xs-offset-4">
+                            <button id="btn_go" class="btn btn-primary" ng-click="go()">Go !</button>
+                        </div>
+                    </form>
+                </div> <!-- end .row -->
+
+                <div class="row">
+                    <p id="p_loader" class="text-center">Request processing ... Please wait ...</p>
+                </div>
+
+                <!-- Pokémon information -->
+                <div id="pokeInfoResult" class="row">
+
+                    <p>Voici le Pokémon que vous avez choisi :</p>
+                    <ul class="list-group col-xs-6 col-xs-offset-2">
+                        <li>
+                            <img style="width:30%;"
+                                 src="http://img.pokemondb.net/artwork/{{ poke.Nom }}.jpg"
+                                 class="img-responsive col-xs-offset-6 img-rounded">
+                        </li>
+                    </ul>
+                    <ul class="pokeInfoResultListItem list-group col-xs-6 col-xs-offset-3" ng-repeat="(key, val) in poke">
+                        <li class="list-group-item list-group-item-info"><b>{{ key }}</b> : {{ val }}</li>
+                    </ul>
+
+                </div> <!-- end .row -->
+
+
+
+            </div> <!-- end .wrapper-search -->
+
+        </div>
+
+    </div>
+
+    <!-- Dependencies -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/angular.min.js"></script>
+
+    <!-- Pokedex app -->
+    <script src="assets/js/pokedex.js"></script>
+
+</body>
+</html>
