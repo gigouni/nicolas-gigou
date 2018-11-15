@@ -1,0 +1,35 @@
+{
+  "name": "nicolasgigou-server",
+  "version": "1.0.0",
+  "description": "GraphQL server for the nicolasgigou.fr website",
+  "main": "src/api/index.mjs",
+  "scripts": {
+    "start": "node --experimental-modules src/api/index.mjs | bunyan -o short",
+    "dev": "nodemon --experimental-modules src/api/index.mjs --watch src --watch config --ext js,mjs,graphql | bunyan -o short",
+    "lint": "eslint . --ext js --fix",
+    "prepush": "npm run lint"
+  },
+  "keywords": [
+    "GraphQL",
+    "Express",
+    "Apollo",
+    "Bunyan",
+    "ESLint",
+    "Nodemon",
+    "JSDoc"
+  ],
+  "author": "Nicolas GIGOU <nicolas.gigou@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.2.2",
+    "bunyan": "^1.8.12",
+    "express": "^4.16.4",
+    "graphql": "^14.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "husky": "0.14.3",
+    "jsdoc": "3.5.5",
+    "nodemon": "^1.18.6"
+  }
+}
