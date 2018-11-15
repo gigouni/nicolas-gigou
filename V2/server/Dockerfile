@@ -6,6 +6,6 @@ COPY ./src /app/src
 
 WORKDIR /app
 
-RUN npm i
+RUN npm i --verbose
 
 CMD npm run dev

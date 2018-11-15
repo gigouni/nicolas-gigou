@@ -7,7 +7,9 @@
     "start": "node --experimental-modules src/api/index.mjs | bunyan -o short",
     "dev": "nodemon --experimental-modules src/api/index.mjs --watch src --watch config --ext js,mjs,graphql | bunyan -o short",
     "lint": "eslint . --ext js --fix",
-    "prepush": "npm run lint"
+    "prepush": "npm run lint",
+    "docker:build": "docker build --tag gigouni:nicolasgigouserver .",
+    "docker:run": "docker run -i -t gigouni:nicolasgigouserver npm start"
   },
   "keywords": [
     "GraphQL",
