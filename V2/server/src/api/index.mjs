@@ -1,7 +1,9 @@
-import { ApolloServer, gql } from 'apollo-server-express'
+import apolloServerExpress from 'apollo-server-express'
 import express from 'express'
 
 import Logger from '../lib/Logger'
+
+const { ApolloServer, gql } = apolloServerExpress
 
 // Construct a schema, using GraphQL schema language
 const typeDefs = gql`
@@ -22,7 +24,7 @@ const server = new ApolloServer({ typeDefs, resolvers })
 const app = express()
 server.applyMiddleware({ app })
 
-const port = 4000
+const port = 8001
 
 app.listen({ port }, () =>
 	Logger.info(`🚀 Server ready at http://localhost:${port}${server.graphqlPath}`),
