@@ -2,24 +2,11 @@ import apolloServerExpress from 'apollo-server-express'
 import express from 'express'
 
 import Logger from '../lib/Logger'
+import schema from './schema'
 
-const { ApolloServer, gql } = apolloServerExpress
+const { ApolloServer } = apolloServerExpress
 
-// Construct a schema, using GraphQL schema language
-const typeDefs = gql`
-  type Query {
-    hello: String
-  }
-`
-
-// Provide resolver functions for your schema fields
-const resolvers = {
-	Query: {
-		hello: () => 'Hello world!',
-	},
-}
-
-const server = new ApolloServer({ typeDefs, resolvers })
+const server = new ApolloServer({ schema })
 
 const app = express()
 server.applyMiddleware({ app })

@@ -1,17 +1,12 @@
 # 1. Nicolas Gigou server
 
-<!-- TOC -->
+GraphQL server for the [nicolasgigou.fr](http://nicolasgigou.fr) website. :computer:
 
-- [1. Nicolas Gigou server](#1-nicolas-gigou-server)
-  - [1.1. Usage](#11-usage)
-  - [1.2. Prerequisites](#12-prerequisites)
-  - [1.3. Changelog](#13-changelog)
+## 1.1. Prerequisites
 
-<!-- /TOC -->
+- Node.js ~ 10.13.0 (latest LTS)
 
-GraphQL server for the [nicolasgigou.fr](http://nicolasgigou.fr) website.
-
-## 1.1. Usage
+## 1.2. Usage
 
 ```shell
 npm i
@@ -21,10 +16,19 @@ npm run docker:build # build the Docker image using the current source
 npm run docker:run # run the built Docker image
 ```
 
-## 1.2. Prerequisites
+## 1.3. Under the hood
 
-- Node.js ~ 10.13.0 (latest LTS)
+- API
+  - GraphQL: [https://graphql.org/](https://graphql.org/)
 
-## 1.3. Changelog
+### 1.3.1. Requesting the API
+
+See [the resolvers](./RESOLVERS.md).
+
+## 1.4. Changelog
 
 See [CHANGELOG](./CHANGELOG.md).
+
+## 1.5. Resources
+
+- Node.js GraphQL & PostgreSQL Quickstart: http://jamesmensch.com/tutorials/graphql-and-postgresql-node-quickstart/
