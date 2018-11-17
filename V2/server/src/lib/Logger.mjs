@@ -7,8 +7,8 @@ class Logger {
 	constructor() {
 		this.options = config
 		this.logger = bunyan.createLogger({
-			name: this.options.LOG_FILENAME,
-			level: this.options.LOG_LEVEL
+			name: this.options.LOG.FILENAME,
+			level: this.options.LOG.LEVEL
 		})
 	}
 

@@ -10,9 +10,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 <!-- TOC -->
 
 - [1. Changelog](#1-changelog)
-  - [1.1. Releases](#11-releases)
-  - [1.2. [Unreleased]](#12-unreleased)
-    - [1.2.1. Added](#121-added)
+    - [1.1. Releases](#11-releases)
+    - [1.2. [Unreleased]](#12-unreleased)
+        - [1.2.1. Added](#121-added)
 
 <!-- /TOC -->
 
@@ -20,7 +20,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### 1.2.1. Added
 
-- Added `sr/api/index.js`
+- Added `sr/api/index.js` and unimplemented stats resolvers
 - Added `Logger`
 - Added `Dockerfile`
-- Added ESLint, `README.md`, `CHANGELOG.md`
+- Added ESLint, JSDoc, `README.md`, `CHANGELOG.md`
