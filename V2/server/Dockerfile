@@ -8,4 +8,4 @@ WORKDIR /app
 
 RUN npm i --verbose
 
-CMD npm run dev
+CMD npm run start
