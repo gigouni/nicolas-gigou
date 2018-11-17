@@ -9,17 +9,11 @@
     "lint": "eslint . --ext js,mjs --fix",
     "prepush": "npm run lint",
     "docker:build": "docker build --tag gigouni:nicolasgigouserver .",
-    "docker:run": "docker run -i -t gigouni:nicolasgigouserver npm start"
+    "docker:run": "docker run -i -t gigouni:nicolasgigouserver npm start",
+    "docker:startDb": "docker run --name nicolasgigou-server-postgres -p 5432:5432 -e 'POSTGRES_USER=nicolasgigou-server' -e 'POSTGRES_PASSWORD=mysecretpassword' -e 'POSTGRES_DB=nicolasgigou-server-db' -d postgres:11.1-alpine",
+    "docker:startPgAdmin": "docker run --name nicolasgigou-server-pgadmin -p 8003:80 -e 'PGADMIN_DEFAULT_EMAIL=root@dev.com' -e 'PGADMIN_DEFAULT_PASSWORD=mysecretpassword' -d dpage/pgadmin4"
   },
-  "keywords": [
-    "GraphQL",
-    "Express",
-    "Apollo",
-    "Bunyan",
-    "ESLint",
-    "Nodemon",
-    "JSDoc"
-  ],
+  "keywords": [ "GraphQL", "Express", "Apollo", "Bunyan", "ESLint", "Nodemon", "JSDoc", "Postgres" ],
   "author": "Nicolas GIGOU <nicolas.gigou@gmail.com>",
   "license": "ISC",
   "dependencies": {
