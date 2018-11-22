@@ -259,19 +259,6 @@
           <p>Veille technologique sur le passé, le présent et le futur de ces technologies.</p>
           <ul class="actions">
             <li><a href="http://nicolas-gigou.fr/assets/docs/VET.pdf" target="_blank" class="button">Montre moi !</a></li>
-            <li><a href="#projects_taurus" class="button scrolly">Next !</a></li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    <section id="projects_taurus">
-      <a class="image"><img src="images/taurus.jpg" alt="" data-position="25% 25%" /></a>
-      <div class="content">
-        <div class="inner">
-          <h2>Taurus (en cours de développement)</h2>
-          <p>Une application web collaborative d'aide aux étudiants par les étudiants sur les cours vus pendant les cursus de l'ISTIC.</p>
-          <ul class="actions">
-            <li><a href="http://taurus.istic.univ-rennes1.fr" target="_blank" class="button">Montre moi !</a></li>
             <li><a href="#projects_embedded" class="button scrolly">Next !</a></li>
           </ul>
         </div>
@@ -347,7 +334,6 @@
                 <li><a href="https://github.com/gigouni/" target="_blank" class="fa-github"><span class="label">GitHub</span></a></li>
                 <li><a href="https://fr.linkedin.com/in/nicolas-gigou" target="_blank" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
                 <li><a href="http://www.viadeo.com/p/002wvr9xdxdomu" target="_blank" class="fa-viadeo"><span class="label">Viadeo</span></a></li>
-                <li><a href="http://www.doyoubuzz.com/nicolas-gigou_1" target="_blank" class="fa-user"><span class="label">DoYouBuzz</span></a></li>
               </ul>
             </li>
           </ul>
