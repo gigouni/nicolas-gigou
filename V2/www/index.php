@@ -168,7 +168,7 @@
           <h2>Projet d'anglais (2nd année IUT)</h2>
           <p>Site statique en anglais réunissant un ensemble de vidéos japonaises à caractère humoristique.</p>
           <ul class="actions">
-            <li><a href="http://dev.nicolas-gigou.fr/embedded_projects/site_anglais/home.html" target="_blank" class="button">Montre moi !</a></li>
+            <li><a href="http://dev.nicolasgigou.fr/embedded_projects/site_anglais/home.html" target="_blank" class="button">Montre moi !</a></li>
             <li><a href="#projects_enstabretagne" class="button scrolly">Next !</a></li>
           </ul>
         </div>
@@ -245,7 +245,7 @@
           <h2>OneToTree</h2>
           <p>Mon arbre généalogique avec GoJS, Bootstrap et des couleurs tendances de 2016.</p>
           <ul class="actions">
-            <li><a href="http://dev.nicolas-gigou.fr/embedded_projects/familyTree/app/genogram.html" target="_blank" class="button">Montre moi !</a></li>
+            <li><a href="http://dev.nicolasgigou.fr/embedded_projects/familyTree/app/genogram.html" target="_blank" class="button">Montre moi !</a></li>
             <li><a href="#projects_vetPhoneGapCordova" class="button scrolly">Next !</a></li>
           </ul>
         </div>
@@ -258,7 +258,7 @@
           <h2>PhoneGap & Cordova</h2>
           <p>Veille technologique sur le passé, le présent et le futur de ces technologies.</p>
           <ul class="actions">
-            <li><a href="http://nicolas-gigou.fr/assets/docs/VET.pdf" target="_blank" class="button">Montre moi !</a></li>
+            <li><a href="http://nicolasgigou.fr/assets/docs/VET.pdf" target="_blank" class="button">Montre moi !</a></li>
             <li><a href="#projects_embedded" class="button scrolly">Next !</a></li>
           </ul>
         </div>
@@ -271,7 +271,7 @@
           <h2>Live previews de projets</h2>
           <p>Certains projets ont été déployés afin de vous livrer une démonstration en direct de travaux.</p>
           <ul class="actions">
-            <li><a href="http://dev.nicolas-gigou.fr" class="button">Montre moi !</a></li>
+            <li><a href="http://dev.nicolasgigou.fr" class="button">Montre moi !</a></li>
             <li><a href="#projects_otherones" class="button scrolly">Next !</a></li>
           </ul>
         </div>
@@ -349,7 +349,7 @@
 <footer id="footer" class="wrapper style1-alt">
   <div class="inner">
     <ul class="menu">
-      <li>&copy; Nicolas GIGOU - nicolas-gigou.fr. Tous droits réservés.</li>
+      <li>&copy; Nicolas GIGOU - nicolasgigou.fr. Tous droits réservés.</li>
     </ul>
   </div>
 </footer>
